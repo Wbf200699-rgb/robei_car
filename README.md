@@ -2,6 +2,8 @@
 
 **集创赛全国二等奖作品** · 面向嵌入式软件、Linux 系统集成与机器人方向的项目展示。
 
+[![Verify source and simulations](https://github.com/Wbf200699-rgb/robei_car/actions/workflows/verify.yml/badge.svg)](https://github.com/Wbf200699-rgb/robei_car/actions/workflows/verify.yml)
+
 基于 **Xilinx Artix-7 / RobeiEDA / Verilog** 的小车项目，配套 **Java/XML Android App**、**ESP32-S3 UWB 网关**和 **Python FastAPI 服务**。仓库按“硬件控制 → 通信 → 感知 → 可视化 → 验证”的链路组织，便于阅读源码、复现实验和面试讲解。
 
 > 奖项信息由项目作者提供；个人具体分工未单独确认。本仓库保留工程来源及协作说明。功能以当前源码和归档证据为准，RTL 仿真、算法回放、历史实物记录分别标注。
@@ -86,7 +88,7 @@ server/.venv/Scripts/python.exe -m pytest server/tests -q
 - 展示版 UWB 默认地址使用 `relay.example.invalid` 占位符，需要自行填写服务地址；未配置时 BLE 仍是独立控制链。
 - 实际运动参数由实车标定结果推算；`config/vehicle_geometry.json` 是几何参考配置，不是运动速度的测量结论。
 - FPGA `build/` 目录、APK、工具附带仿真库、私有 Git 历史和旧工程备份不纳入本展示仓库。
-- 未进行本次实车测试；当前可复现检查的执行结果见 [VALIDATION](docs/VALIDATION.md)。
+- 本次 GitHub CI 已通过 Python/RTL 检查与 Android 测试、Debug APK 构建、Lint；未进行实车测试。完整执行结果见 [VALIDATION](docs/VALIDATION.md)。
 
 ## 适合展示的技术问题
 
