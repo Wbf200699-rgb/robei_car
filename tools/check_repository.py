@@ -39,6 +39,21 @@ def main() -> None:
             fail(f"wave size mismatch: {path.name}")
         if hashlib.sha256(data).hexdigest() != row["vcd_sha256"]:
             fail(f"wave hash mismatch: {path.name}")
+        # Validate Git's selected bytes too: Windows autocrlf may have staged
+        # LF data before the binary VCD attribute was introduced.
+        relative = path.relative_to(ROOT).as_posix()
+        staged = subprocess.run(["git", "show", f":{relative}"], cwd=ROOT,
+                                capture_output=True)
+        if staged.returncode == 0 and staged.stdout != data:
+            # A newly regenerated wave is intentionally unstaged in CI.
+            old_manifest = subprocess.run(
+                ["git", "show", ":little_car/test/results/hardware_parameters/wave_manifest.csv"],
+                cwd=ROOT, capture_output=True)
+            manifest_path = waves / "wave_manifest.csv"
+            selected_manifest = old_manifest.stdout.replace(b"\r\n", b"\n")
+            live_manifest = manifest_path.read_bytes().replace(b"\r\n", b"\n")
+            if old_manifest.returncode == 0 and selected_manifest == live_manifest:
+                fail(f"staged wave differs from evidence: {path.name}; re-add with --renormalize")
         log = (waves / row["log"]).read_text(encoding="utf-8")
         if row["status"] != "PASS" or "RESULT TEST_PASS" not in log:
             fail(f"missing pass evidence: {row['test']}")
