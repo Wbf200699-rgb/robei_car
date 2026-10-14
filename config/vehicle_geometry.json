@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "units": {
+    "distance": "m",
+    "angle": "deg"
+  },
+  "world_frame": {
+    "origin": "anchor_A",
+    "x_axis": "A_to_C",
+    "y_axis": "A_to_D",
+    "anchor_clockwise_order_from_upper_left": ["D", "B", "C", "A"],
+    "anchors_m": {
+      "A": [0.0, 0.0, 0.0],
+      "B": [1.5, 1.67, 0.0],
+      "C": [1.5, 0.0, 0.0],
+      "D": [0.0, 1.67, 0.0]
+    },
+    "rectangle_width_m": 1.5,
+    "rectangle_height_m": 1.67
+  },
+  "vehicle_frame": {
+    "origin": "uwb_tag_rectangle_diagonal_intersection",
+    "x_axis": "forward",
+    "y_axis": "left",
+    "z_axis": "up",
+    "tag_rectangle_length_m": 0.22,
+    "tag_rectangle_width_m": 0.20,
+    "tags": {
+      "0": {"role": "rear_left", "position_m": [-0.11, 0.10, 0.0]},
+      "1": {"role": "front_left", "position_m": [0.11, 0.10, 0.0]},
+      "2": {"role": "front_right", "position_m": [0.11, -0.10, 0.0]},
+      "3": {"role": "rear_right", "position_m": [-0.11, -0.10, 0.0]}
+    },
+    "sensors": {
+      "bmi088_0": {
+        "position_m": [0.0, 0.0, 0.0],
+        "position_confidence": "longitudinal_midpoint_only"
+      },
+      "bmi088_1": {
+        "position_m": [0.0, 0.0, 0.0],
+        "position_confidence": "longitudinal_midpoint_only"
+      },
+      "pmw3901": {
+        "position_m": [0.0, 0.0, 0.105],
+        "vehicle_center_to_tail_m": 0.2,
+        "position_confidence": "provisional_interpretation"
+      }
+    }
+  },
+  "vl53l1x_array": {
+    "count": 5,
+    "i2c_addresses_7bit": [48, 49, 50, 51, 52],
+    "mounting": "unconfirmed"
+  },
+  "validation": {
+    "uwb_is_external_truth_only": true,
+    "vehicle_dimension_tolerance_m": 0.05,
+    "maximum_fix_age_s": 0.6,
+    "maximum_fix_skew_s": 0.15
+  }
+}

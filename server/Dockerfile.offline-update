@@ -1,0 +1,8 @@
+FROM little-car-uwb-server-uwb-server:latest
+
+USER root
+COPY app /app/app
+RUN chown -R app:app /app/app
+USER app
+
+CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8765", "--proxy-headers", "--forwarded-allow-ips", "*", "--no-access-log", "--log-level", "warning"]

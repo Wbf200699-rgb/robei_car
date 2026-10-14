@@ -1,0 +1,18 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  assign merged_key_up_n = key_up_n &amp; bt_key_up_n;&#xa;  assign merged_key_down_n = key_down_n &amp; bt_key_down_n;&#xa;  assign merged_key_left_n = key_left_n &amp; bt_key_left_n;&#xa;  assign merged_key_right_n = key_right_n &amp; bt_key_right_n;&#xa;  assign merged_key_mid_n = key_mid_n &amp; bt_key_mid_n;" Color="#d3d3d3" Comment="" Height="1080" Name="key_low_merge" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_up_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.095"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_down_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.185"/>
+ <Port Color="#7fffd4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_left_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.275"/>
+ <Port Color="#f0ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_right_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.365"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_mid_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.455"/>
+ <Port Color="#ffe4c4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="bt_key_up_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.545"/>
+ <Port Color="#b8860b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="bt_key_down_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.635"/>
+ <Port Color="#ffebcd" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="bt_key_left_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.725"/>
+ <Port Color="#0000ff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="bt_key_right_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.815"/>
+ <Port Color="#8a2be2" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="bt_key_mid_n" Parent="key_low_merge" Side="left" Width="30" X="-0.01875" Y="0.905"/>
+ <Port Color="#a52a2a" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="merged_key_up_n" Parent="key_low_merge" Side="right" Width="30" X="0.98125" Y="0.14"/>
+ <Port Color="#deb887" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="merged_key_down_n" Parent="key_low_merge" Side="right" Width="30" X="0.98125" Y="0.32"/>
+ <Port Color="#5f9ea0" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="merged_key_left_n" Parent="key_low_merge" Side="right" Width="30" X="0.98125" Y="0.5"/>
+ <Port Color="#7fff00" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="merged_key_right_n" Parent="key_low_merge" Side="right" Width="30" X="0.98125" Y="0.68"/>
+ <Port Color="#d2691e" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="merged_key_mid_n" Parent="key_low_merge" Side="right" Width="30" X="0.98125" Y="0.86"/>
+</Module>

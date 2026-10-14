@@ -1,0 +1,11 @@
+VCD info: dumpfile tb_c5_motion_stabilizer.vcd opened for output.
+RESULT forward_pid gyro=320 correction=-15 wheels=685,715,685,715
+RESULT reverse_pid gyro=-320 correction=15 wheels=-685,-715,-685,-715
+RESULT immediate_stop wheels=0,0,0,0 force_stop=0
+RESULT stale_bypass wheels=650,750,800,625 correction_active=0
+RESULT polarity_positive_is_right=1
+RESULT correction_limit=96 slew_per_sample=8
+RESULT runtime_pid_applied=pass update_interval_cycles=24
+RESULT degraded_stream_continuity=pass stale_stream_bypass=pass
+RESULT TEST_PASS c5_motion_stabilizer
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\c5_motion_stabilizer_parameter.v:1355: $finish called at 3211000 (1ps)

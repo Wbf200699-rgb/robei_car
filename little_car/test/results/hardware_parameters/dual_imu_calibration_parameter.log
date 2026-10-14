@@ -1,0 +1,9 @@
+VCD info: dumpfile tb_dual_imu_static_calibrator.vcd opened for output.
+RESULT static result_flags=7f axes=2/0,1/0 gyro_mean=2,-3,4,30,-1,-11 peaks=4,30
+RESULT signed_average result_flags=7f gyro_mean=0,0,0,0,0,0
+RESULT offline_rejection pass=0 result_flags=79
+RESULT noisy_rejection pass=0 result_flags=3d imu1_peak=700
+RESULT axes imu0=2 sign=0 imu1=1 sign=0
+RESULT means imu0_a=30,-160,-5504 imu1_a=1176,-5350,165
+RESULT TEST_PASS dual_imu_static_calibrator
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\dual_imu_calibration_parameter.v:508: $finish called at 756000 (1ps)

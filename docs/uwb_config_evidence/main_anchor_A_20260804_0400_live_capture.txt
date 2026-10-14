@@ -1,0 +1,24 @@
+LinkPG main anchor A live positioning verification
+Date: 2026-08-04
+Serial: COM10, 115200 8N1
+Capture duration: 5 seconds
+CRC-valid Modbus frames: 219
+Position frames: 219
+
+Configured anchor coordinates (cm):
+A = (0, 0, 0)
+B = (150, 0, 0)
+C = (150, 170, 0)
+D = (0, 170, 0)
+
+Latest sample per tag:
+tag=0 position_valid=1 status=0001000F xyz_cm=-91,126,0 distances_cm=179,251,231,126
+tag=1 position_valid=1 status=0001000F xyz_cm=-62,124,0 distances_cm=186,195,222,102
+tag=2 position_valid=1 status=0001000F xyz_cm=-58,159,0 distances_cm=213,203,206,93
+tag=3 position_valid=1 status=0001000F xyz_cm=-53,90,0 distances_cm=153,182,222,121
+
+Interpretation:
+- Bit 16 of status is set for all four tags, so hardware 2D solving succeeded.
+- Distance mask 0x000F is set for all four tags, so anchors A-D all contributed.
+- Negative X is valid because the tags were randomly placed outside the configured
+  anchor rectangle during this bench test.

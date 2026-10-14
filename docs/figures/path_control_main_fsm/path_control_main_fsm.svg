@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="521.64pt" height="326.88pt" viewBox="0 0 521.64 326.88" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-14T16:23:07.960866</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 326.88
+L 521.64 326.88
+L 521.64 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 19.5966 36.432
+L 502.0434 36.432
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #aab6be; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 125.42364 196.164
+L 396.21636 196.164
+Q 401.40396 196.164 401.40396 192.924
+L 401.40396 66.888
+Q 401.40396 63.648 396.21636 63.648
+L 125.42364 63.648
+Q 120.23604 63.648 120.23604 66.888
+L 120.23604 192.924
+Q 120.23604 196.164 125.42364 196.164
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #f5f7f8; stroke: #d2dade; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 22.70916 101.556
+L 91.70424 101.556
+Q 97.92936 101.556 97.92936 97.668
+L 97.92936 67.536
+Q 97.92936 63.648 91.70424 63.648
+L 22.70916 63.648
+Q 16.48404 63.648 16.48404 67.536
+L 16.48404 97.668
+Q 16.48404 101.556 22.70916 101.556
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e4f0f5; stroke: #245b78; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 22.70916 150.48
+L 91.70424 150.48
+Q 97.92936 150.48 97.92936 146.592
+L 97.92936 116.46
+Q 97.92936 112.572 91.70424 112.572
+L 22.70916 112.572
+Q 16.48404 112.572 16.48404 116.46
+L 16.48404 146.592
+Q 16.48404 150.48 22.70916 150.48
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e1f1ef; stroke: #3f8d8a; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 108.82332 131.688
+L 108.82332 82.764
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #aab6be; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 146.17404 113.868
+L 202.71888 113.868
+Q 210.50028 113.868 210.50028 109.008
+L 210.50028 81.792
+Q 210.50028 76.932 202.71888 76.932
+L 146.17404 76.932
+Q 138.39264 76.932 138.39264 81.792
+L 138.39264 109.008
+Q 138.39264 113.868 146.17404 113.868
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #ffffff; stroke: #245b78; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 240.58836 116.784
+L 307.5084 116.784
+Q 315.2898 116.784 315.2898 111.924
+L 315.2898 78.876
+Q 315.2898 74.016 307.5084 74.016
+L 240.58836 74.016
+Q 232.80696 74.016 232.80696 78.876
+L 232.80696 111.924
+Q 232.80696 116.784 240.58836 116.784
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e1f1ef; stroke: #3f8d8a; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 332.40888 113.868
+L 377.541 113.868
+Q 385.3224 113.868 385.3224 109.008
+L 385.3224 81.792
+Q 385.3224 76.932 377.541 76.932
+L 332.40888 76.932
+Q 324.62748 76.932 324.62748 81.792
+L 324.62748 109.008
+Q 324.62748 113.868 332.40888 113.868
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e8f1ea; stroke: #58866b; stroke-width: 1.15; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 139.43016 180.936
+L 209.98152 180.936
+Q 214.1316 180.936 214.1316 178.344
+L 214.1316 139.14
+Q 214.1316 136.548 209.98152 136.548
+L 139.43016 136.548
+Q 135.28008 136.548 135.28008 139.14
+L 135.28008 178.344
+Q 135.28008 180.936 139.43016 180.936
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #ffffff; stroke: #aab6be; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 218.80044 180.936
+L 301.80204 180.936
+Q 305.95212 180.936 305.95212 178.344
+L 305.95212 139.14
+Q 305.95212 136.548 301.80204 136.548
+L 218.80044 136.548
+Q 214.65036 136.548 214.65036 139.14
+L 214.65036 178.344
+Q 214.65036 180.936 218.80044 180.936
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #ffffff; stroke: #aab6be; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 310.62096 180.936
+L 382.20984 180.936
+Q 386.35992 180.936 386.35992 178.344
+L 386.35992 139.14
+Q 386.35992 136.548 382.20984 136.548
+L 310.62096 136.548
+Q 306.47088 136.548 306.47088 139.14
+L 306.47088 178.344
+Q 306.47088 180.936 310.62096 180.936
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #f8e8e5; stroke: #c85e55; stroke-width: 0.85; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 143.58024 220.14
+L 380.1348 220.14
+Q 385.3224 220.14 385.3224 216.9
+L 385.3224 202.644
+Q 385.3224 199.404 380.1348 199.404
+L 143.58024 199.404
+Q 138.39264 199.404 138.39264 202.644
+L 138.39264 216.9
+Q 138.39264 220.14 143.58024 220.14
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e8f1ea; stroke: #58866b; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 415.41048 106.092
+L 499.96836 106.092
+Q 505.15596 106.092 505.15596 102.852
+L 505.15596 66.888
+Q 505.15596 63.648 499.96836 63.648
+L 415.41048 63.648
+Q 410.22288 63.648 410.22288 66.888
+L 410.22288 102.852
+Q 410.22288 106.092 415.41048 106.092
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e4f0f5; stroke: #245b78; stroke-width: 0.85; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 415.41048 154.044
+L 499.96836 154.044
+Q 505.15596 154.044 505.15596 150.804
+L 505.15596 114.84
+Q 505.15596 111.6 499.96836 111.6
+L 415.41048 111.6
+Q 410.22288 111.6 410.22288 114.84
+L 410.22288 150.804
+Q 410.22288 154.044 415.41048 154.044
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e1f1ef; stroke: #3f8d8a; stroke-width: 0.85; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 415.41048 201.996
+L 499.96836 201.996
+Q 505.15596 201.996 505.15596 198.756
+L 505.15596 162.792
+Q 505.15596 159.552 499.96836 159.552
+L 415.41048 159.552
+Q 410.22288 159.552 410.22288 162.792
+L 410.22288 198.756
+Q 410.22288 201.996 415.41048 201.996
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #f7f0de; stroke: #a97a2e; stroke-width: 0.85; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 19.5966 259.02
+L 47.60964 259.02
+L 47.60964 240.552
+L 19.5966 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #dce9f2; stroke: #245b78; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 49.68468 259.02
+L 77.69772 259.02
+L 77.69772 240.552
+L 49.68468 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #ddeae5; stroke: #58866b; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 79.77276 259.02
+L 107.7858 259.02
+L 107.7858 240.552
+L 79.77276 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #dce9f2; stroke: #245b78; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 109.86084 259.02
+L 137.87388 259.02
+L 137.87388 240.552
+L 109.86084 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #f1d8d3; stroke: #c85e55; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 139.94892 259.02
+L 167.96196 259.02
+L 167.96196 240.552
+L 139.94892 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #dce9f2; stroke: #245b78; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 170.037 259.02
+L 198.05004 259.02
+L 198.05004 240.552
+L 170.037 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #dce9f2; stroke: #245b78; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 200.12508 259.02
+L 228.13812 259.02
+L 228.13812 240.552
+L 200.12508 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 230.21316 259.02
+L 258.2262 259.02
+L 258.2262 240.552
+L 230.21316 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 260.30124 259.02
+L 288.31428 259.02
+L 288.31428 240.552
+L 260.30124 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 290.38932 259.02
+L 318.40236 259.02
+L 318.40236 240.552
+L 290.38932 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 320.4774 259.02
+L 348.49044 259.02
+L 348.49044 240.552
+L 320.4774 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 350.56548 259.02
+L 378.57852 259.02
+L 378.57852 240.552
+L 350.56548 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 380.65356 259.02
+L 408.6666 259.02
+L 408.6666 240.552
+L 380.65356 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 410.74164 259.02
+L 438.75468 259.02
+L 438.75468 240.552
+L 410.74164 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 440.82972 259.02
+L 468.84276 259.02
+L 468.84276 240.552
+L 440.82972 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 470.9178 259.02
+L 498.93084 259.02
+L 498.93084 240.552
+L 470.9178 240.552
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #e5e8ea; stroke: #b9c1c6; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 382.20984 209.772
+L 390.51 209.772
+L 390.51 122.94
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #58866b; stroke-width: 1.15; stroke-linecap: square"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 94.8168 82.764
+Q 101.82006 82.764 107.425778 82.764
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #245b78; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 104.225778 81.164
+L 107.425778 82.764
+L 104.225778 84.364
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #245b78; stroke: #245b78; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 94.8168 131.688
+Q 101.82006 131.688 107.425778 131.688
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 104.225778 130.088
+L 107.425778 131.688
+L 104.225778 133.288
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #3f8d8a; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 108.82332 107.064
+Q 118.67976 107.064 127.138658 107.064
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #245b78; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 123.538658 105.264
+L 127.138658 107.064
+L 123.538658 108.864
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #245b78; stroke: #245b78; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 207.38772 89.892
+Q 221.65362 89.892 234.521978 89.892
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 231.321978 88.292
+L 234.521978 89.892
+L 231.321978 91.492
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #3f8d8a; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 235.91952 103.5
+Q 221.65362 103.5 208.785262 103.5
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #61717c; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 211.985262 105.1
+L 208.785262 103.5
+L 211.985262 101.9
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #61717c; stroke: #61717c; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 207.38772 98.316
+Q 267.56388 80.263152 326.401437 97.914419
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #58866b; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 323.79615 95.462384
+L 326.401437 97.914419
+L 322.876636 98.527428
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #58866b; stroke: #58866b; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 327.74004 105.444
+Q 267.56388 127.107418 208.70265 105.917375
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #61717c; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 211.171539 108.506697
+L 208.70265 105.917375
+L 212.255441 105.495857
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #61717c; stroke: #61717c; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 274.30776 114.84
+Q 264.84228 124.561469 261.234293 136.185277
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 263.401407 133.926158
+L 261.234293 136.185277
+L 260.727266 133.096114
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #3f8d8a; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 301.28328 114.84
+Q 326.57094 120.764146 345.347591 136.618385
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke-dasharray: 4.625,2; stroke-dashoffset: 0; stroke: #c85e55; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 344.111417 133.742299
+L 345.347591 136.618385
+L 342.305017 135.881672
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #c85e55; stroke-dasharray: 4.625,2; stroke-dashoffset: 0; stroke: #c85e55; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 390.51 122.94
+Q 378.57852 117.432 367.915905 112.509754
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #58866b; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 370.150657 115.303654
+L 367.915905 112.509754
+L 371.491877 112.398292
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #58866b; stroke: #58866b; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 398.2914 97.992
+Q 405.81342 91.512 412.276614 85.944147
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #245b78; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 409.241487 86.710963
+L 412.276614 85.944147
+L 411.06899 88.832338
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #245b78; stroke: #245b78; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 398.2914 124.56
+Q 405.81342 128.772 412.116053 132.301197
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 410.356994 129.711658
+L 412.116053 132.301197
+L 408.988986 132.154721
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #3f8d8a; stroke: #3f8d8a; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 398.2914 160.2
+Q 405.81342 170.568 412.514755 179.804806
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #a97a2e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 412.003681 176.71631
+L 412.514755 179.804806
+L 409.737314 178.360567
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #a97a2e; stroke: #a97a2e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 214.1316 267.444
+Q 137.6145 267.444 62.103631 267.444
+" clip-path="url(#p2cb6a33244)" style="fill: none; stroke: #58866b; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 64.903631 268.844
+L 62.103631 267.444
+L 64.903631 266.044
+z
+" clip-path="url(#p2cb6a33244)" style="fill: #58866b; stroke: #58866b; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #17232d; font: 700 13.5px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="19.5966" y="19.413773" transform="rotate(-0 19.5966 19.413773)">路径控制主状态机</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #61717c; font: 7.1px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="19.5966" y="29.963273" transform="rotate(-0 19.5966 29.963273)">统一输入驱动同一编码、撤销与执行逻辑，使路径内容、位姿和进度保持同步</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #17232d; font: 700 8.5px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="19.5966" y="48.81682" transform="rotate(-0 19.5966 48.81682)">a</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #17232d; font: 700 7.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="31.00932" y="48.624047" transform="rotate(-0 31.00932 48.624047)">统一事件入口</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #17232d; font: 700 8.5px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="116.60472" y="48.81682" transform="rotate(-0 116.60472 48.81682)">b</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #17232d; font: 700 7.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="128.01744" y="48.624047" transform="rotate(-0 128.01744 48.624047)">主状态机与原子更新</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #17232d; font: 700 8.5px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="413.33544" y="48.81682" transform="rotate(-0 413.33544 48.81682)">c</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #17232d; font: 700 7.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="424.74816" y="48.624047" transform="rotate(-0 424.74816 48.624047)">同步状态视图</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #17232d; font: 700 7.4px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="57.46608" y="79.617891" transform="rotate(-0 57.46608 79.617891)">车端物理按键</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #245b78; font: 7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="57.46608" y="91.495734" transform="rotate(-0 57.46608 91.495734)">↑  ↓  ←  →  确认</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #17232d; font: 700 7.4px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="57.46608" y="128.541891" transform="rotate(-0 57.46608 128.541891)">Android APP</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #3f8d8a; font: 6.6px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="57.46608" y="140.309578" transform="rotate(-0 57.46608 140.309578)">路径编辑命令</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #61717c; font: 6.1px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="57.46608" y="168.359883" transform="rotate(-0 57.46608 168.359883)">虚拟脉冲与物理脉冲合并</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #245b78; font: 5.8px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="57.46608" y="177.287187" transform="rotate(-0 57.46608 177.287187)">key_*_pulse</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #245b78; font: 700 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="148.76784" y="87.201141" transform="rotate(-0 148.76784 87.201141)">STATE_MENU</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #17232d; font: 700 10px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="174.44646" y="97.162466" transform="rotate(-0 174.44646 97.162466)">菜单 / 等待</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="174.44646" y="106.717266" transform="rotate(-0 174.44646 106.717266)">选择编辑或运行</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #3f8d8a; font: 700 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="243.18216" y="84.285141" transform="rotate(-0 243.18216 84.285141)">STATE_CHANGE</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #17232d; font: 700 10px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="274.04838" y="96.987506" transform="rotate(-0 274.04838 96.987506)">路径编辑</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="274.04838" y="109.633266" transform="rotate(-0 274.04838 109.633266)">追加、组合标记与撤销</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #58866b; font: 700 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="335.00268" y="87.201141" transform="rotate(-0 335.00268 87.201141)">STATE_RUN</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #17232d; font: 700 10px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="354.97494" y="97.162466" transform="rotate(-0 354.97494 97.162466)">自动执行</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="354.97494" y="106.717266" transform="rotate(-0 354.97494 106.717266)">逐字取指</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #3f8d8a; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="221.39424" y="85.19557" transform="rotate(-0 221.39424 85.19557)">进入编辑</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #61717c; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="221.39424" y="110.46757" transform="rotate(-0 221.39424 110.46757)">确认</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #58866b; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="268.08264" y="74.82757" transform="rotate(-0 268.08264 74.82757)">启动 · active &gt; 0</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #61717c; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="270.67644" y="125.37157" transform="rotate(-0 270.67644 125.37157)">active = 0</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #245b78; font: 700 6.6px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="144.61776" y="147.761578" transform="rotate(-0 144.61776 147.761578)">普通前进</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #17232d; font: 6.4px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="144.61776" y="158.0745" transform="rotate(-0 144.61776 158.0745)">追加  11</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="144.61776" y="167.629266" transform="rotate(-0 144.61776 167.629266)">占 1 个指令字</text>
+   </g>
+   <g id="text_31">
+    <text style="fill: #61717c; font: 5.3px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="144.61776" y="175.844766" transform="rotate(-0 144.61776 175.844766)">step_is_turn = 0</text>
+   </g>
+   <g id="text_32">
+    <text style="fill: #3f8d8a; font: 700 6.6px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="223.98804" y="147.761578" transform="rotate(-0 223.98804 147.761578)">左 / 右转组合</text>
+   </g>
+   <g id="text_33">
+    <text style="fill: #17232d; font: 6.1px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="223.98804" y="158.069562" transform="rotate(-0 223.98804 158.069562)">10|11   或   01|11</text>
+   </g>
+   <g id="text_34">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="223.98804" y="167.629266" transform="rotate(-0 223.98804 167.629266)">连续占 2 个指令字</text>
+   </g>
+   <g id="text_35">
+    <text style="fill: #61717c; font: 5.3px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="223.98804" y="175.844766" transform="rotate(-0 223.98804 175.844766)">step_is_turn = 1</text>
+   </g>
+   <g id="text_36">
+    <text style="fill: #c85e55; font: 700 6.6px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="315.80856" y="147.761578" transform="rotate(-0 315.80856 147.761578)">逻辑撤销</text>
+   </g>
+   <g id="text_37">
+    <text style="fill: #17232d; font: 5.9px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="315.80856" y="157.936805" transform="rotate(-0 315.80856 157.936805)">普通：回退 1 字</text>
+   </g>
+   <g id="text_38">
+    <text style="fill: #17232d; font: 5.9px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="315.80856" y="167.332805" transform="rotate(-0 315.80856 167.332805)">转向：整体回退 2 字</text>
+   </g>
+   <g id="text_39">
+    <text style="fill: #c85e55; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="315.80856" y="175.998383" transform="rotate(-0 315.80856 175.998383)">恢复 target 位姿</text>
+   </g>
+   <g id="text_40">
+    <text style="fill: #58866b; font: 700 6.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="148.76784" y="211.396594" transform="rotate(-0 148.76784 211.396594)">run_step_pulse</text>
+   </g>
+   <g id="text_41">
+    <text style="fill: #17232d; font: 5.2px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="209.98152" y="211.285281" transform="rotate(-0 209.98152 211.285281)">history 写入 · completed++ · current 位姿更新 · 队列左移 · active--</text>
+   </g>
+   <g id="text_42">
+    <text style="fill: #245b78; font: 700 7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="421.11684" y="75.619734" transform="rotate(-0 421.11684 75.619734)">路径寄存器</text>
+   </g>
+   <g id="text_43">
+    <text style="fill: #17232d; font: 5.6px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="421.11684" y="85.86625" transform="rotate(-0 421.11684 85.86625)">route_info / old_route_info</text>
+   </g>
+   <g id="text_44">
+    <text style="fill: #17232d; font: 5.6px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="421.11684" y="95.340125" transform="rotate(-0 421.11684 95.340125)">active / completed steps</text>
+   </g>
+   <g id="text_45">
+    <text style="fill: #245b78; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="493.22448" y="75.15157" transform="rotate(-0 493.22448 75.15157)">同步</text>
+   </g>
+   <g id="text_46">
+    <text style="fill: #3f8d8a; font: 700 7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="421.11684" y="123.571734" transform="rotate(-0 421.11684 123.571734)">位姿寄存器</text>
+   </g>
+   <g id="text_47">
+    <text style="fill: #17232d; font: 5.6px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="421.11684" y="133.896125" transform="rotate(-0 421.11684 133.896125)">current:  x, y, direction</text>
+   </g>
+   <g id="text_48">
+    <text style="fill: #17232d; font: 5.6px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="421.11684" y="143.258" transform="rotate(-0 421.11684 143.258)">target:   x, y, direction</text>
+   </g>
+   <g id="text_49">
+    <text style="fill: #a97a2e; font: 700 7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="421.11684" y="171.523734" transform="rotate(-0 421.11684 171.523734)">统一状态输出</text>
+   </g>
+   <g id="text_50">
+    <text style="fill: #17232d; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="421.11684" y="181.885266" transform="rotate(-0 421.11684 181.885266)">HDMI 路径与执行进度</text>
+   </g>
+   <g id="text_51">
+    <text style="fill: #17232d; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="421.11684" y="191.281266" transform="rotate(-0 421.11684 191.281266)">Android 路线重建</text>
+   </g>
+   <g id="text_52">
+    <text style="fill: #17232d; font: 700 7.5px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="19.5966" y="234.19343" transform="rotate(-0 19.5966 234.19343)">2 bit 指令存储 · 16 个有效指令字</text>
+   </g>
+   <g id="text_53">
+    <text style="fill: #61717c; font: 5.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="502.0434" y="233.697727" transform="rotate(-0 502.0434 233.697727)">活动路径按执行顺序左移</text>
+   </g>
+   <g id="text_54">
+    <text style="fill: #245b78; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="33.60312" y="250.29531" transform="rotate(-0 33.60312 250.29531)">11</text>
+   </g>
+   <g id="text_55">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="33.60312" y="265.498336" transform="rotate(-0 33.60312 265.498336)">0</text>
+   </g>
+   <g id="text_56">
+    <text style="fill: #58866b; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="63.6912" y="250.29531" transform="rotate(-0 63.6912 250.29531)">10</text>
+   </g>
+   <g id="text_57">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="63.6912" y="265.498336" transform="rotate(-0 63.6912 265.498336)">1</text>
+   </g>
+   <g id="text_58">
+    <text style="fill: #245b78; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="93.77928" y="250.29531" transform="rotate(-0 93.77928 250.29531)">11</text>
+   </g>
+   <g id="text_59">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="93.77928" y="265.498336" transform="rotate(-0 93.77928 265.498336)">2</text>
+   </g>
+   <g id="text_60">
+    <text style="fill: #c85e55; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="123.86736" y="250.29531" transform="rotate(-0 123.86736 250.29531)">01</text>
+   </g>
+   <g id="text_61">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="123.86736" y="265.498336" transform="rotate(-0 123.86736 265.498336)">3</text>
+   </g>
+   <g id="text_62">
+    <text style="fill: #245b78; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="153.95544" y="250.29531" transform="rotate(-0 153.95544 250.29531)">11</text>
+   </g>
+   <g id="text_63">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="153.95544" y="265.498336" transform="rotate(-0 153.95544 265.498336)">4</text>
+   </g>
+   <g id="text_64">
+    <text style="fill: #245b78; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="184.04352" y="250.29531" transform="rotate(-0 184.04352 250.29531)">11</text>
+   </g>
+   <g id="text_65">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="184.04352" y="265.498336" transform="rotate(-0 184.04352 265.498336)">5</text>
+   </g>
+   <g id="text_66">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="214.1316" y="250.29531" transform="rotate(-0 214.1316 250.29531)">00</text>
+   </g>
+   <g id="text_67">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="214.1316" y="265.498336" transform="rotate(-0 214.1316 265.498336)">6</text>
+   </g>
+   <g id="text_68">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="244.21968" y="250.29531" transform="rotate(-0 244.21968 250.29531)">00</text>
+   </g>
+   <g id="text_69">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="244.21968" y="265.498336" transform="rotate(-0 244.21968 265.498336)">7</text>
+   </g>
+   <g id="text_70">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="274.30776" y="250.29531" transform="rotate(-0 274.30776 250.29531)">00</text>
+   </g>
+   <g id="text_71">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="274.30776" y="265.498336" transform="rotate(-0 274.30776 265.498336)">8</text>
+   </g>
+   <g id="text_72">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="304.39584" y="250.29531" transform="rotate(-0 304.39584 250.29531)">00</text>
+   </g>
+   <g id="text_73">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="304.39584" y="265.498336" transform="rotate(-0 304.39584 265.498336)">9</text>
+   </g>
+   <g id="text_74">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="334.48392" y="250.29531" transform="rotate(-0 334.48392 250.29531)">00</text>
+   </g>
+   <g id="text_75">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="334.48392" y="265.498336" transform="rotate(-0 334.48392 265.498336)">10</text>
+   </g>
+   <g id="text_76">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="364.572" y="250.29531" transform="rotate(-0 364.572 250.29531)">00</text>
+   </g>
+   <g id="text_77">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="364.572" y="265.498336" transform="rotate(-0 364.572 265.498336)">11</text>
+   </g>
+   <g id="text_78">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="394.66008" y="250.29531" transform="rotate(-0 394.66008 250.29531)">00</text>
+   </g>
+   <g id="text_79">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="394.66008" y="265.498336" transform="rotate(-0 394.66008 265.498336)">12</text>
+   </g>
+   <g id="text_80">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="424.74816" y="250.29531" transform="rotate(-0 424.74816 250.29531)">00</text>
+   </g>
+   <g id="text_81">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="424.74816" y="265.498336" transform="rotate(-0 424.74816 265.498336)">13</text>
+   </g>
+   <g id="text_82">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="454.83624" y="250.29531" transform="rotate(-0 454.83624 250.29531)">00</text>
+   </g>
+   <g id="text_83">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="454.83624" y="265.498336" transform="rotate(-0 454.83624 265.498336)">14</text>
+   </g>
+   <g id="text_84">
+    <text style="fill: #b9c1c6; font: 700 7.2px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle" x="484.92432" y="250.29531" transform="rotate(-0 484.92432 250.29531)">00</text>
+   </g>
+   <g id="text_85">
+    <text style="fill: #61717c; font: 4.7px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="484.92432" y="265.498336" transform="rotate(-0 484.92432 265.498336)">15</text>
+   </g>
+   <g id="text_86">
+    <text style="fill: #58866b; font: 5.3px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="219.83796" y="268.996734" transform="rotate(-0 219.83796 268.996734)">run_step_pulse 后移出首字</text>
+   </g>
+   <g id="text_87">
+    <text style="fill: #b9c1c6; font: 700 6.8px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="19.5966" y="293.296375" transform="rotate(-0 19.5966 293.296375)">00</text>
+   </g>
+   <g id="text_88">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="38.79072" y="293.017266" transform="rotate(-0 38.79072 293.017266)">停止 / 空指令</text>
+   </g>
+   <g id="text_89">
+    <text style="fill: #c85e55; font: 700 6.8px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="128.5362" y="293.296375" transform="rotate(-0 128.5362 293.296375)">01</text>
+   </g>
+   <g id="text_90">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="147.73032" y="293.017266" transform="rotate(-0 147.73032 293.017266)">右转</text>
+   </g>
+   <g id="text_91">
+    <text style="fill: #58866b; font: 700 6.8px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="211.5378" y="293.296375" transform="rotate(-0 211.5378 293.296375)">10</text>
+   </g>
+   <g id="text_92">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="230.73192" y="293.017266" transform="rotate(-0 230.73192 293.017266)">左转</text>
+   </g>
+   <g id="text_93">
+    <text style="fill: #245b78; font: 700 6.8px 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start" x="294.5394" y="293.296375" transform="rotate(-0 294.5394 293.296375)">11</text>
+   </g>
+   <g id="text_94">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="313.73352" y="293.017266" transform="rotate(-0 313.73352 293.017266)">前进</text>
+   </g>
+   <g id="text_95">
+    <text style="fill: #61717c; font: 5.2px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="502.0434" y="292.852031" transform="rotate(-0 502.0434 292.852031)">实线：正向状态流    虚线：撤销 / 停止反馈</text>
+   </g>
+   <g id="text_96">
+    <text style="fill: #61717c; font: 5.8px 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="19.5966" y="310.837266" transform="rotate(-0 19.5966 310.837266)">关键约束  每次逻辑输入与实际指令字占用解耦；所有路径、坐标、方向和进度更新在同一状态机中完成。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2cb6a33244">
+   <rect x="1.44" y="1.44" width="518.76" height="324"/>
+  </clipPath>
+ </defs>
+</svg>

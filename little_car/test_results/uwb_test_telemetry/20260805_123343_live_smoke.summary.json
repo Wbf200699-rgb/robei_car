@@ -1,0 +1,411 @@
+{
+  "schema": "little_car_uwb_test_analysis_v1",
+  "test_only": true,
+  "competition_design_input": false,
+  "generated_at_utc": "2026-08-05T04:33:54.143700+00:00",
+  "source": "D:\\Projects\\Robei\\little_car_new\\little_car\\test_results\\uwb_test_telemetry\\20260805_123343_live_smoke.jsonl",
+  "capture_metadata": {
+    "schema": "little_car_uwb_test_v1",
+    "test_only": true,
+    "record_type": "metadata",
+    "label": "live_smoke",
+    "started_at_unix": 1785904423.5709276,
+    "started_at_utc": "2026-08-05T04:33:43.570928+00:00",
+    "interval_s": 0.2,
+    "kinematics_window_s": 0.8,
+    "source": "server_state_snapshot",
+    "units": {
+      "position": "cm",
+      "speed": "cm/s",
+      "heading": "deg"
+    },
+    "competition_design_input": false
+  },
+  "metadata_boundary_valid": true,
+  "sample_summary": {
+    "samples": 26,
+    "error_records": 0,
+    "duration_s": 4.998531818389893,
+    "effective_sample_hz": 5.001468612848183,
+    "gateway_connected_fraction": 0.0,
+    "gateway_fresh_fraction": 0.0,
+    "four_fresh_valid_tags_fraction": 0.0,
+    "kinematics_valid_fraction": 0.0,
+    "pose_quality_counts": {
+      "none": 26
+    },
+    "error_type_counts": {}
+  },
+  "gateway_counter_deltas": {
+    "good_frames": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "crc_errors": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "uwb_tx": {
+      "start": 1801,
+      "end": 1801,
+      "delta": 0,
+      "resets": 0
+    },
+    "queue_drops": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "rx_bytes": {
+      "start": 1,
+      "end": 1,
+      "delta": 0,
+      "resets": 0
+    },
+    "framing_errors": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "position_frames": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "pass_frames": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "raw_frames": {
+      "start": 0,
+      "end": 0,
+      "delta": 0,
+      "resets": 0
+    },
+    "position_start_requests": {
+      "start": 1801,
+      "end": 1801,
+      "delta": 0,
+      "resets": 0
+    }
+  },
+  "tags": {
+    "0": {
+      "present_samples": 0,
+      "fresh_fraction": 0.0,
+      "position_valid_fraction": 0.0,
+      "usable_fraction": 0.0,
+      "median_position_cm": {
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "age_ms": {
+        "count": 0,
+        "minimum": null,
+        "mean": null,
+        "median": null,
+        "p95": null,
+        "maximum": null
+      },
+      "spread_from_median_cm": {
+        "rms_radius": null,
+        "p95_radius": null,
+        "maximum_radius": null,
+        "note": "Interpretable as positioning jitter only when the vehicle was stationary."
+      },
+      "anchor_distance_cm": {
+        "A": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "B": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "C": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "D": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        }
+      }
+    },
+    "1": {
+      "present_samples": 0,
+      "fresh_fraction": 0.0,
+      "position_valid_fraction": 0.0,
+      "usable_fraction": 0.0,
+      "median_position_cm": {
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "age_ms": {
+        "count": 0,
+        "minimum": null,
+        "mean": null,
+        "median": null,
+        "p95": null,
+        "maximum": null
+      },
+      "spread_from_median_cm": {
+        "rms_radius": null,
+        "p95_radius": null,
+        "maximum_radius": null,
+        "note": "Interpretable as positioning jitter only when the vehicle was stationary."
+      },
+      "anchor_distance_cm": {
+        "A": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "B": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "C": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "D": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        }
+      }
+    },
+    "2": {
+      "present_samples": 0,
+      "fresh_fraction": 0.0,
+      "position_valid_fraction": 0.0,
+      "usable_fraction": 0.0,
+      "median_position_cm": {
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "age_ms": {
+        "count": 0,
+        "minimum": null,
+        "mean": null,
+        "median": null,
+        "p95": null,
+        "maximum": null
+      },
+      "spread_from_median_cm": {
+        "rms_radius": null,
+        "p95_radius": null,
+        "maximum_radius": null,
+        "note": "Interpretable as positioning jitter only when the vehicle was stationary."
+      },
+      "anchor_distance_cm": {
+        "A": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "B": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "C": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "D": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        }
+      }
+    },
+    "3": {
+      "present_samples": 26,
+      "fresh_fraction": 0.0,
+      "position_valid_fraction": 0.0,
+      "usable_fraction": 0.0,
+      "median_position_cm": {
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "age_ms": {
+        "count": 26,
+        "minimum": 18573088.354349136,
+        "mean": 18575485.756516457,
+        "median": 18575485.85009575,
+        "p95": 18577729.462981224,
+        "maximum": 18577978.92642021
+      },
+      "spread_from_median_cm": {
+        "rms_radius": null,
+        "p95_radius": null,
+        "maximum_radius": null,
+        "note": "Interpretable as positioning jitter only when the vehicle was stationary."
+      },
+      "anchor_distance_cm": {
+        "A": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "B": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "C": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        },
+        "D": {
+          "count": 0,
+          "minimum": null,
+          "mean": null,
+          "median": null,
+          "p95": null,
+          "maximum": null
+        }
+      }
+    }
+  },
+  "vehicle_pose": {
+    "path_length_cm": 0,
+    "displacement_cm": 0.0,
+    "speed_cm_s": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "yaw_rate_deg_s": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "absolute_yaw_rate_deg_s": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "front_width_cm": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "rear_width_cm": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "left_length_cm": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "right_length_cm": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    },
+    "fix_skew_ms": {
+      "count": 0,
+      "minimum": null,
+      "mean": null,
+      "median": null,
+      "p95": null,
+      "maximum": null
+    }
+  },
+  "warnings": [
+    "Capture is shorter than 10 seconds; quality statistics are only a smoke test.",
+    "At least one sample did not contain four fresh position-valid tag fixes."
+  ]
+}

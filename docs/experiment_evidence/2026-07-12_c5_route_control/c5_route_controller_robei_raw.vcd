@@ -1,0 +1,569 @@
+$date
+	Sun Jul 12 20:07:27 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module c5_route_controller_robei_test $end
+$var wire 1 ! run_step_pulse $end
+$var wire 11 " rr_speed [10:0] $end
+$var wire 11 # rf_speed [10:0] $end
+$var wire 1 $ motor_blocked $end
+$var wire 1 % motion_busy $end
+$var wire 11 & lr_speed [10:0] $end
+$var wire 11 ' lf_speed [10:0] $end
+$var wire 2 ( current_cmd [1:0] $end
+$var reg 6 ) active_route_steps [5:0] $end
+$var reg 1 * clk $end
+$var reg 16 + forward_ms [15:0] $end
+$var reg 10 , forward_speed [9:0] $end
+$var reg 10 - lf_default_speed [9:0] $end
+$var reg 10 . lr_default_speed [9:0] $end
+$var reg 3 / manual_cmd [2:0] $end
+$var reg 1 0 manual_mode $end
+$var reg 1 1 motor_enable $end
+$var reg 1 2 obstacle_stop $end
+$var reg 10 3 overall_speed [9:0] $end
+$var reg 10 4 rf_default_speed [9:0] $end
+$var reg 64 5 route_info [63:0] $end
+$var reg 10 6 rr_default_speed [9:0] $end
+$var reg 1 7 rst_n $end
+$var reg 5 8 state_info [4:0] $end
+$var reg 16 9 step_length [15:0] $end
+$var reg 16 : turn_ms [15:0] $end
+$var reg 10 ; turn_speed [9:0] $end
+$var integer 32 < errors [31:0] $end
+$var integer 32 = fd [31:0] $end
+$scope module c5_route_controller0 $end
+$var wire 6 > active_route_steps [5:0] $end
+$var wire 1 * clk $end
+$var wire 16 ? forward_ms [15:0] $end
+$var wire 10 @ forward_speed [9:0] $end
+$var wire 10 A lf_default_speed [9:0] $end
+$var wire 10 B lr_default_speed [9:0] $end
+$var wire 3 C manual_cmd [2:0] $end
+$var wire 1 0 manual_mode $end
+$var wire 1 D motion_done $end
+$var wire 1 1 motor_enable $end
+$var wire 1 2 obstacle_stop $end
+$var wire 10 E overall_speed [9:0] $end
+$var wire 10 F rf_default_speed [9:0] $end
+$var wire 64 G route_info [63:0] $end
+$var wire 10 H rr_default_speed [9:0] $end
+$var wire 1 7 rst_n $end
+$var wire 5 I state_info [4:0] $end
+$var wire 16 J step_length [15:0] $end
+$var wire 16 K turn_ms [15:0] $end
+$var wire 10 L turn_speed [9:0] $end
+$var wire 1 M in_run $end
+$var wire 10 N effective_turn_speed [9:0] $end
+$var wire 10 O effective_forward_speed [9:0] $end
+$var parameter 10 P CAL_BASE_SPEED $end
+$var parameter 32 Q CLK_HZ $end
+$var parameter 32 R CYCLES_PER_MS $end
+$var parameter 3 S MANUAL_FORWARD $end
+$var parameter 3 T MANUAL_LEFT $end
+$var parameter 3 U MANUAL_REVERSE $end
+$var parameter 3 V MANUAL_RIGHT $end
+$var parameter 3 W MANUAL_STOP $end
+$var parameter 2 X ROUTE_FORWARD $end
+$var parameter 2 Y ROUTE_LEFT $end
+$var parameter 2 Z ROUTE_RIGHT $end
+$var parameter 2 [ ROUTE_STOP $end
+$var parameter 10 \ SPEED_MAX $end
+$var parameter 10 ] SPEED_MIN $end
+$var parameter 5 ^ STATE_RUN $end
+$var reg 2 _ current_cmd [1:0] $end
+$var reg 32 ` elapsed_cycles [31:0] $end
+$var reg 11 a lf_speed [10:0] $end
+$var reg 11 b lr_speed [10:0] $end
+$var reg 1 % motion_busy $end
+$var reg 1 $ motor_blocked $end
+$var reg 1 c restart_pending $end
+$var reg 11 d rf_speed [10:0] $end
+$var reg 11 e rr_speed [10:0] $end
+$var reg 1 ! run_step_pulse $end
+$var reg 32 f target_cycles [31:0] $end
+$scope function adjusted_speed $end
+$var reg 10 g common_speed [9:0] $end
+$var reg 10 h wheel_default [9:0] $end
+$var integer 32 i value [31:0] $end
+$upscope $end
+$scope function ms_to_cycles $end
+$var reg 16 j ms [15:0] $end
+$upscope $end
+$scope function neg_speed $end
+$var reg 10 k speed [9:0] $end
+$upscope $end
+$scope function pos_speed $end
+$var reg 10 l speed [9:0] $end
+$upscope $end
+$scope function step_to_ms $end
+$var reg 32 m ms_calc [31:0] $end
+$var reg 16 n steps [15:0] $end
+$upscope $end
+$scope function turn_mag $end
+$var reg 10 o speed [9:0] $end
+$upscope $end
+$scope task stop_motors $end
+$upscope $end
+$upscope $end
+$scope task log_case $end
+$var reg 192 p label_text [191:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 ^
+b1100100 ]
+b1110000100 \
+b0 [
+b1 Z
+b10 Y
+b11 X
+b0 W
+b100 V
+b10 U
+b11 T
+b1 S
+b1100001101010000 R
+b10111110101111000010000000 Q
+b1010111100 P
+$end
+#0
+$dumpvars
+bx p
+bx o
+bx n
+bx m
+bx l
+bx k
+bx j
+bx i
+bx h
+bx g
+b0 f
+b0 e
+b0 d
+0c
+b0 b
+b0 a
+b0 `
+b0 _
+b1010111100 O
+b1010111100 N
+0M
+b1010111100 L
+b111110100 K
+b10100 J
+b0 I
+b1001110001 H
+b0 G
+b1011101110 F
+b1010111100 E
+0D
+b0 C
+b1100100000 B
+b1010001010 A
+b1010111100 @
+b1111101000 ?
+b0 >
+b10000000000000000000000000000011 =
+b0 <
+b1010111100 ;
+b111110100 :
+b10100 9
+b0 8
+07
+b1001110001 6
+b0 5
+b1011101110 4
+b1010111100 3
+02
+11
+10
+b0 /
+b1100100000 .
+b1010001010 -
+b1010111100 ,
+b1111101000 +
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+0$
+b0 #
+b0 "
+0!
+$end
+#10000
+1*
+#20000
+0*
+#30000
+1*
+#40000
+0*
+#50000
+1*
+#60000
+0*
+#70000
+1*
+#80000
+0*
+#90000
+1*
+#100000
+0*
+#110000
+1*
+#120000
+0*
+#130000
+1*
+#140000
+0*
+#150000
+1*
+#160000
+0*
+#170000
+1*
+#180000
+0*
+#190000
+1*
+#200000
+0*
+b1101101011000010110111001110101011000010110110001011111011001100110111101110010011101110110000101110010011001000101111101110100011100100110100101101101011011010110010101100100 p
+b1 /
+b1 C
+17
+#210000
+b1001110001 "
+b1001110001 e
+b1100100000 &
+b1100100000 b
+b1011101110 #
+b1011101110 d
+b1010001010 '
+b1010001010 a
+b1001110001 l
+b1001110001 i
+b1001110001 h
+b1010111100 g
+1*
+#220000
+0*
+#230000
+b1001110001 l
+b1001110001 i
+b1001110001 h
+1*
+#240000
+0*
+#250000
+b1001110001 l
+b1001110001 i
+b1001110001 h
+1*
+#260000
+0*
+#270000
+b1001110001 l
+b1001110001 i
+b1001110001 h
+1*
+#280000
+0*
+#290000
+b1001110001 l
+b1001110001 i
+b1001110001 h
+1*
+#300000
+0*
+b11001100110111101110010011101110110000101110010011001000101111101100010011011000110111101100011011010110110010101100100 p
+12
+#310000
+1$
+b0 "
+b0 e
+b0 &
+b0 b
+b0 #
+b0 d
+b0 '
+b0 a
+1*
+#320000
+0*
+#330000
+1$
+1*
+#340000
+0*
+#350000
+1$
+1*
+#360000
+0*
+#370000
+1$
+1*
+#380000
+0*
+#390000
+1$
+1*
+#400000
+0*
+b111001001100101011101100110010101110010011100110110010101011111011001010111001101100011011000010111000001100101 p
+b10 /
+b10 C
+#410000
+b10110001111 "
+b10110001111 e
+b10011100000 &
+b10011100000 b
+b10100010010 #
+b10100010010 d
+b10101110110 '
+b10101110110 a
+0$
+b1001110001 k
+b1001110001 i
+b1001110001 h
+1*
+#420000
+0*
+#430000
+b1001110001 k
+b1001110001 i
+b1001110001 h
+1*
+#440000
+0*
+#450000
+b1001110001 k
+b1001110001 i
+b1001110001 h
+1*
+#460000
+0*
+#470000
+b1001110001 k
+b1001110001 i
+b1001110001 h
+1*
+#480000
+0*
+#490000
+b1001110001 k
+b1001110001 i
+b1001110001 h
+1*
+#500000
+0*
+b110110001100101011001100111010001011111011001010111001101100011011000010111000001100101 p
+b11 /
+b11 C
+#510000
+b1000111111 "
+b1000111111 e
+b10100010010 &
+b10100010010 b
+b1010111100 #
+b1010111100 d
+b10110101000 '
+b10110101000 a
+b1000111111 l
+b1011101110 k
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#520000
+0*
+#530000
+b1000111111 l
+b1011101110 k
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#540000
+0*
+#550000
+b1000111111 l
+b1011101110 k
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#560000
+0*
+#570000
+b1000111111 l
+b1011101110 k
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#580000
+0*
+#590000
+b1000111111 l
+b1011101110 k
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#600000
+0*
+b11100100110100101100111011010000111010001011111011001010111001101100011011000010111000001100101 p
+b100 /
+b100 C
+#610000
+b10111000001 "
+b10111000001 e
+b1011101110 &
+b1011101110 b
+b10101000100 #
+b10101000100 d
+b1001011000 '
+b1001011000 a
+b1000111111 k
+b1011101110 l
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#620000
+0*
+#630000
+b1000111111 k
+b1011101110 l
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#640000
+0*
+#650000
+b1000111111 k
+b1011101110 l
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#660000
+0*
+#670000
+b1000111111 k
+b1011101110 l
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#680000
+0*
+#690000
+b1000111111 k
+b1011101110 l
+b1001110001 o
+b1001110001 i
+b1001110001 h
+1*
+#700000
+0*
+b110110101100001011011100111010101100001011011000101111101110011011101000110111101110000 p
+b0 /
+b0 C
+02
+#710000
+b0 "
+b0 e
+b0 &
+b0 b
+b0 #
+b0 d
+b0 '
+b0 a
+1*
+#720000
+0*
+#730000
+1*
+#740000
+0*
+#750000
+1*
+#760000
+0*
+#770000
+1*
+#780000
+0*
+#790000
+1*
+#800000
+0*
+b110000101110101011101000110111101101101011000010111010001101001011000110101111101100110011011110111001001110111011000010111001001100100 p
+b11 5
+b11 G
+b1 )
+b1 >
+1M
+b11 8
+b11 I
+00
+#810000
+b111011100110101100100111111 f
+b1001110001 "
+b1001110001 e
+b1100100000 &
+b1100100000 b
+b1011101110 #
+b1011101110 d
+b1010001010 '
+b1010001010 a
+1%
+b11 (
+b11 _
+b100111000100 j
+b100111000100 m
+b10100 n
+b1001110001 l
+b1001110001 i
+b1001110001 h
+1*
+#820000
+0*
+#830000
+b1 `
+1*
+#840000
+0*
+#850000
+b10 `
+1*
+#860000
+0*
+#870000
+b11 `
+1*
+#880000
+0*
+#890000
+b100 `
+1*
+#900000
+0*

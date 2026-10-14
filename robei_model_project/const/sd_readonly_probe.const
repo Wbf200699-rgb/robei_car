@@ -1,0 +1,15 @@
+<!DOCTYPE Robei>
+<Module Class="module" Code="create_clock -name sys_clk -period 20.000 [get_ports {clk}]" Color="#d3d3d3" Device="xc7a50tfgg484" Family="artix7" Height="1080" Name="sd_readonly_probe" Parent="0" Type="const" Vendor="AMD" Width="2000" X="0" Y="0">
+  <Port Color="#faebd7" Description="" Drive="" Height="30" Name="Y18" Parent="sd_readonly_probe" Pull="none" Slew="" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.1250000"/>
+  <Port Color="#00ffff" Description="" Drive="8" Height="30" Name="J1" Parent="sd_readonly_probe" Pull="none" Slew="SLOW" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.2750000"/>
+  <Port Color="#7fffd4" Description="" Drive="8" Height="30" Name="T1" Parent="sd_readonly_probe" Pull="none" Slew="SLOW" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.4250000"/>
+  <Port Color="#f0ffff" Description="" Drive="8" Height="30" Name="L6" Parent="sd_readonly_probe" Pull="none" Slew="SLOW" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.5750000"/>
+  <Port Color="#f5f5dc" Description="" Drive="" Height="30" Name="J20" Parent="sd_readonly_probe" Pull="up" Slew="" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.7250000"/>
+  <Port Color="#ffe4c4" Description="" Drive="" Height="30" Name="G13" Parent="sd_readonly_probe" Pull="up" Slew="" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.8750000"/>
+  <Port Color="#b8860b" Description="" Drive="4" Height="30" Name="F16" Parent="sd_readonly_probe" Pull="up" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.1250000"/>
+  <Port Color="#ffebcd" Description="" Drive="" Height="30" Name="F13" Parent="sd_readonly_probe" Pull="up" Slew="" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.2750000"/>
+  <Port Color="#0000ff" Description="" Drive="" Height="30" Name="E17" Parent="sd_readonly_probe" Pull="up" Slew="" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.4250000"/>
+  <Port Color="#8a2be2" Description="" Drive="" Height="30" Name="F14" Parent="sd_readonly_probe" Pull="up" Slew="" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.5750000"/>
+  <Port Color="#a52a2a" Description="" Drive="4" Height="30" Name="E14" Parent="sd_readonly_probe" Pull="none" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.7250000"/>
+  <Port Color="#deb887" Description="" Drive="4" Height="30" Name="E13" Parent="sd_readonly_probe" Pull="none" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.8750000"/>
+</Module>

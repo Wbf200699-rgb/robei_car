@@ -1,0 +1,18 @@
+VCD info: dumpfile tb_hdmi_timing_parameter.vcd opened for output.
+RESULT probe h=0 v=0 de=1 hs=0 vs=0
+RESULT probe h=1023 v=599 de=1 hs=0 vs=0
+RESULT probe h=1024 v=0 de=0 hs=0 vs=0
+RESULT probe h=1063 v=0 de=0 hs=0 vs=0
+RESULT probe h=1064 v=0 de=0 hs=1 vs=0
+RESULT probe h=1163 v=0 de=0 hs=1 vs=0
+RESULT probe h=1164 v=0 de=0 hs=0 vs=0
+RESULT probe h=0 v=611 de=0 hs=0 vs=0
+RESULT probe h=0 v=612 de=0 hs=0 vs=1
+RESULT probe h=0 v=621 de=0 hs=0 vs=1
+RESULT probe h=0 v=622 de=0 hs=0 vs=0
+RESULT probe h=1323 v=644 de=0 hs=0 vs=0
+RESULT mode=1024x600 h_active=1024 h_fp=40 h_sync=100 h_bp=160 h_total=1324
+RESULT v_active=600 v_fp=12 v_sync=10 v_bp=23 v_total=645
+RESULT pixels_per_frame=853980 active_pixels=614400 blank_pixels=239580
+RESULT TEST_PASS hdmi_timing_parameter
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\hdmi_timing_parameter.v:117: $finish called at 156000 (1ps)

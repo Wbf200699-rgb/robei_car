@@ -1,0 +1,5 @@
+VCD info: dumpfile tb_power_on_reset_parameter.vcd opened for output.
+RESULT por_clock_hz=50000000 por_cycles=1000000 por_time_us=20000
+RESULT accelerated_tail_cycles=10 async_assert_latency_ns=1
+RESULT TEST_PASS power_on_reset_parameter
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\power_on_reset_parameter.v:86: $finish called at 261000 (1ps)

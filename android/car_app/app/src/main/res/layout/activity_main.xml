@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/statusPanel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/toolbar_background"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <View
+            android:id="@+id/statusIndicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/status_dot" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="蓝牙未连接，点击前往连接"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/statusLinkIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="连接状态"
+            android:src="@drawable/ic_nav_bluetooth"
+            app:tint="@color/text_secondary" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/pageMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="车辆控制"
+                    android:textColor="@color/text_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="选择驾驶模式，然后在下方完成控制"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/toolbar_background"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/manualModeButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="手动" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/autoModeButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="自动" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/immediateStopButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/danger"
+                        android:minWidth="0dp"
+                        android:text="立即停车" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/panel_box"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/routeMapButton"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="路线视图" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/radarMapButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="雷达视图" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/radarPowerButton"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="开启雷达" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/routeMapPane"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <car.car_app.map.GridMapView
+                        android:id="@+id/gridMapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/panel_box" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/panel_box"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/mapSummaryText"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="等待车辆状态同步"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="状态"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/mapStateValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="待机"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="路线进度"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/mapStepsValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="0/0"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="速度"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/mapSpeedValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="--"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/radarMapPane"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <car.car_app.ui.RadarView
+                        android:id="@+id/radarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="420dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/panel_box" />
+
+                    <TextView
+                        android:id="@+id/motionSensorSummaryText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/panel_box"
+                        android:fontFamily="monospace"
+                        android:minHeight="172dp"
+                        android:padding="12dp"
+                        android:text="运动传感器 @M2 等待同步\nIMU0  等待数据\nIMU1  等待数据\n光流  等待数据"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/radarSummaryText"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/panel_box"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:padding="12dp"
+                        android:text="等待雷达数据同步"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lidarMapDebugText"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/panel_box"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:padding="12dp"
+                        android:text="72点链路 · 等待首圈"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/controlDiagnosticsButton"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="4dp"
+                        android:text="显示传感器详细数据" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/pageMapping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/toolbar_background"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mapWorkspaceButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:text="环境地图" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mapLocalizationButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="UWB 定位" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mappingSummaryText"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/panel_box"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:text="等待雷达与位姿数据"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <car.car_app.map.OccupancyGridView
+                android:id="@+id/occupancyGridView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/panel_box" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/panel_box"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mappingExploreButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:minWidth="0dp"
+                    android:text="自动探索" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mappingNavigateButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="选择目的地" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mappingStopNavigationButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:minWidth="0dp"
+                        android:text="停止导航"
+                        android:textColor="@color/danger"
+                        app:strokeColor="@color/danger" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mappingPauseButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:text="暂停" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mappingCenterButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:text="场地" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mappingCalibrationButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:text="标定" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mappingClearButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:text="清空"
+                    android:textColor="@color/danger"
+                    app:strokeColor="@color/danger" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mappingSaveButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="保存" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mappingLoadButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="读取" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mappingAnchorButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="基站" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mappingSyncButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:minWidth="0dp"
+                        android:text="刷新" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pageLocalization"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/toolbar_background"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/localizationMapButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:text="环境地图" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/localizationWorkspaceButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="UWB 定位" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/localizationSummaryText"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/panel_box"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="UWB 定位 · 场地布局与四标签车体姿态"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <car.car_app.localization.UwbLayoutView
+                android:id="@+id/uwbLayoutView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/panel_box" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/anchorCalibrationButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:text="设置基站布局" />
+
+            <TextView
+                android:id="@+id/anchorCalibrationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:maxLines="3"
+                android:text="设置场地长宽，并为四个角选择实际基站标签"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/pageSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备中心"
+                    android:textColor="@color/text_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="车辆设置、标定与诊断"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/deviceConnectButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:text="车辆连接"
+                        app:icon="@drawable/ic_nav_bluetooth" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/deviceDiagnosticsButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="诊断中心"
+                        app:icon="@drawable/ic_nav_log" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/deviceUwbServerButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical|start"
+                    android:text="UWB 服务器 · 公网  ›" />
+
+                <TextView
+                    android:id="@+id/uwbEndpointSummaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="当前：公网服务器"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/settingsSummaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/panel_box"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:padding="10dp"
+                    android:text="车辆尚未连接\n连接后将自动同步运行状态\n行驶参数与传感器配置可在下方展开查看"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/deviceParametersToggleButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="行驶参数与实测估算  ›" />
+
+                <LinearLayout
+                    android:id="@+id/parameterTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/panel_box"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:background="@color/panel_soft"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:text="参数"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="当前值"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.15"
+                            android:text="实测估算"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:text="状态"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowSpeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:text="整体速度"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/parameterValueSpeed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="?"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/parameterEstimateSpeed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.15"
+                            android:text="待标定"
+                            android:textColor="@color/primary_dark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/parameterStateSpeed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:text="等待同步"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowStep"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.3" android:text="路线步长" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterValueStep" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="?" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterEstimateStep" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.15" android:text="待标定" android:textColor="@color/primary_dark" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterStateStep" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.1" android:text="等待同步" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowLf"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.3" android:text="左前轮速" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterValueLf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="-" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterEstimateLf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.15" android:text="—" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterStateLf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.1" android:text="未回传" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowRf"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.3" android:text="右前轮速" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterValueRf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="-" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterEstimateRf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.15" android:text="—" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterStateRf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.1" android:text="未回传" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowLr"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.3" android:text="左后轮速" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterValueLr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="-" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterEstimateLr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.15" android:text="—" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterStateLr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.1" android:text="未回传" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowRr"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.3" android:text="右后轮速" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterValueRr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="-" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterEstimateRr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.15" android:text="—" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterStateRr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.1" android:text="未回传" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parameterRowSafe"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.3" android:text="避障距离" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterValueSafe" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="?" android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterEstimateSafe" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.15" android:text="—" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/parameterStateSafe" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.1" android:text="等待雷达帧" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/deviceProfilesToggleButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical|start"
+                    android:text="轮速补偿与运动标定  ›" />
+
+                <LinearLayout
+                    android:id="@+id/motionProfilePanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/panel_box"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="方向轮速配置"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/forwardProfileButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|start"
+                        android:text="前进  LF 675  RF 775  LR 675  RR 775" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/reverseProfileButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_vertical|start"
+                        android:text="后退  LF 775  RF 600  LR 800  RR 600" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rotationProfileButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_vertical|start"
+                        android:text="旋转  LF 700  RF 700  LR 700  RR 700" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/resetProfilesButton"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:text="恢复推荐默认值" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/legacyParameterControls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/panel_box"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="参数"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:columnCount="2">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectSpeedButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="整体速度" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectStepButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="路线步长" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectLfButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="左前轮" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectRfButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="右前轮" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectLrButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="左后轮" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectRrButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="右后轮" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/selectSafeButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="安全距离" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/toggleSettingButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="4dp"
+                            android:text="设置模式" />
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/decreaseParameterButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textSize="24sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/increaseParameterButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="+"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/previousParameterButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:text="上一项" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/nextParameterButton"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="下一项" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/pageConnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:background="@drawable/home_hero_background"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="智能车控制台"
+                            android:textColor="@color/text_on_hero_muted"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="C5 智能车"
+                            android:textColor="@color/text_on_hero"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/homeVehicleStateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="未连接 · 等待车辆"
+                            android:textColor="@color/text_on_hero"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/homeVehicleDetailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="连接后显示模式与传感器状态"
+                            android:textColor="@color/text_on_hero_muted"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="智能车俯视图"
+                        android:src="@drawable/ic_vehicle_top" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginTop="10dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/metric_background"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="速度" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/homeSpeedValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="--" android:textColor="@color/text_primary" android:textSize="20sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/metric_background"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安全距离" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/homeSafeValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="--" android:textColor="@color/text_primary" android:textSize="20sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/metric_background"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="路线进度" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                        <TextView android:id="@+id/homeRouteValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="--" android:textColor="@color/text_primary" android:textSize="20sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/homePrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="10dp"
+                    android:text="连接车辆" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/homeMapButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="6dp"
+                    android:text="查看地图工作区"
+                    app:icon="@drawable/ic_nav_mapping" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="车辆连接"
+                    android:textColor="@color/text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/connectionSummaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/metric_background"
+                    android:gravity="center_vertical"
+                    android:minHeight="116dp"
+                    android:padding="16dp"
+                    android:text="连接状态\n手机蓝牙：检测中\nCH9141K 串口：未连接"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/connectButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/connect_bluetooth"
+                    app:icon="@drawable/ic_nav_bluetooth" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/disconnectButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/disconnect_bluetooth" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/requestStatusButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="同步状态"
+                        app:icon="@drawable/ic_refresh"
+                        app:iconGravity="textStart"
+                        app:iconPadding="6dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/pageLogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/diagnosticsBackButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="‹ 返回设备中心" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="诊断中心"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/copyLogButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/copy_log" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/clearLogButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/clear_log" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/logScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/panel_box"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/logText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp" />
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/panel_box"
+        android:elevation="3dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/autoControlStatusText"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="手动驾驶 · 长按方向键，松开即停止"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/forwardButton"
+            android:layout_width="112dp"
+            android:layout_height="46dp"
+            android:text="前进"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/autoControlStatusText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/leftButton"
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:text="左转"
+            app:layout_constraintBottom_toBottomOf="@id/stopButton"
+            app:layout_constraintEnd_toStartOf="@id/stopButton"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stopButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stopButton"
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/danger"
+            android:text="停止"
+            app:layout_constraintBottom_toTopOf="@id/backButton"
+            app:layout_constraintEnd_toStartOf="@id/rightButton"
+            app:layout_constraintStart_toEndOf="@id/leftButton"
+            app:layout_constraintTop_toBottomOf="@id/forwardButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rightButton"
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:text="右转"
+            app:layout_constraintBottom_toBottomOf="@id/stopButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/stopButton"
+            app:layout_constraintTop_toTopOf="@id/stopButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            android:layout_width="112dp"
+            android:layout_height="46dp"
+            android:text="后退"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/panel_box"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabConnectButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:textSize="11sp"
+            android:text="首页"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_nav_home"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="18dp"
+            app:iconTint="@color/text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabMapButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:textSize="11sp"
+            android:text="控制"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_nav_control"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="18dp"
+            app:iconTint="@color/text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabMappingButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:textSize="11sp"
+            android:text="地图"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_nav_mapping"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="18dp"
+            app:iconTint="@color/text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabSettingsButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:textSize="11sp"
+            android:text="设备"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_nav_settings"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="18dp"
+            app:iconTint="@color/text_secondary" />
+    </LinearLayout>
+</LinearLayout>

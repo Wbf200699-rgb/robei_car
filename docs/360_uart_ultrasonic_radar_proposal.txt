@@ -1,0 +1,159 @@
+360 Degree UART Ultrasonic Radar Proposal
+=========================================
+
+Project context
+---------------
+The car already has a low-mounted forward ultrasonic sensor. It is suitable for
+wheel-height collision protection and chassis safety. A future 360 degree UART
+ultrasonic radar can add surrounding-space awareness, radar visualization, and a
+stronger demo story.
+
+Recommended project story
+-------------------------
+The car has two sensing layers:
+
+1. Low ultrasonic sensor
+   - Watches the wheel-height area.
+   - Handles close-range front collision and chassis safety.
+   - Has the highest safety priority.
+
+2. 360 degree UART ultrasonic radar
+   - Watches the surrounding environment.
+   - Builds a local point cloud around the car.
+   - Provides sector danger levels and open-space awareness.
+
+The FPGA acts as the real-time safety brain. It receives sensor data, updates the
+display, judges danger, and stops the car with deterministic low latency. The
+Bluetooth app acts as the interaction and visualization layer.
+
+Functions suitable for FPGA
+---------------------------
+These are realistic and useful to implement in Verilog:
+
+1. UART radar receiver
+   - Receive radar frames from the 360 degree ultrasonic radar.
+   - Parse angle and distance fields.
+   - Validate frames with header/checksum if the radar protocol provides one.
+
+2. Radar point cache
+   - Store distance by angle.
+   - Options:
+     - 360 bins, one distance per degree.
+     - 180 bins, one distance per two degrees.
+     - 72 bins, one distance per five degrees for simpler display.
+
+3. HDMI radar display
+   - Draw the car at the center.
+   - Draw surrounding radar points as a 2D ring/point cloud.
+   - Use color by distance:
+     - Green: safe/far.
+     - Yellow: caution.
+     - Red: danger/near.
+
+4. Safety bubble
+   - Define a safety radius around the car, for example 30 cm.
+   - Any radar point inside the safety bubble triggers warning or stop.
+   - Low-mounted ultrasonic stop has priority over radar-based warning.
+
+5. Danger sectors
+   - Split 360 degrees into 8 or 12 sectors.
+   - Track the minimum distance in each sector.
+   - Display sector danger on HDMI.
+   - Send sector summary to the Bluetooth app.
+
+6. Emergency stop / motion inhibit
+   - If the front sector or low ultrasonic sensor reports danger, stop forward
+     motion.
+   - Optionally inhibit turning toward a dangerous side sector.
+   - Keep this logic simple and deterministic in the first version.
+
+7. Bluetooth summary output
+   - Send compact radar/status frames to the app.
+   - Prefer sector minimum distances first; full point cloud can be added later.
+
+Functions better for the app or future extension
+------------------------------------------------
+These are possible, but not ideal as pure FPGA first-version work:
+
+1. SLAM or long-term global mapping.
+2. Complex path replanning.
+3. Automatic parking space search.
+4. Advanced obstacle avoidance strategy.
+5. Beautiful historical visualization and logs.
+
+The app is a better place for rich visualization, history, parameter tuning, and
+more complex decision explanations.
+
+Suggested implementation stages
+-------------------------------
+Stage 1: Bring-up and display
+  - Add UART RX driver for the radar.
+  - Parse angle and distance.
+  - Cache points by angle.
+  - Draw 360 radar points on HDMI.
+  - Add a simple Bluetooth radar summary frame.
+
+Stage 2: Safety bubble
+  - Compute 8 or 12 sector minimum distances.
+  - Show sector danger colors on HDMI.
+  - Combine low ultrasonic and radar danger signals.
+  - Stop or inhibit motion when danger is detected.
+
+Stage 3: App visualization
+  - App connects through CH9141K BLE-UART.
+  - App keeps sending P heartbeats once per second.
+  - App receives status, ACK, and radar summary frames.
+  - App draws a nicer 360 radar view and shows danger sectors.
+
+Stage 4: Smarter behavior
+  - When blocked, stop first.
+  - Compare left/right/back sector clearance.
+  - Suggest or execute a simple safe turn direction.
+  - Keep route replanning optional.
+
+Possible Bluetooth frame design
+-------------------------------
+Existing frames:
+  @PONG\n
+  @K<KEY>\n
+  @S...\n
+
+Possible new radar summary frames:
+  @Z<sector_count><d0><d1>...<dn>\n
+
+Example:
+  @Z8 0030 0048 0120 0200 0180 0060 0040 0028\n
+
+Where:
+  - Z means radar zone/sector summary.
+  - sector_count is 8 or 12.
+  - each distance is a sector minimum distance in cm.
+
+Possible point frame for debug:
+  @R<angle_deg>,<distance_cm>\n
+
+Example:
+  @R090,045\n
+
+The first version should prefer @Z sector summary because it is compact and easy
+for FPGA and app parsing.
+
+Demo-friendly explanation
+-------------------------
+The low ultrasonic sensor is the car's close-range bumper. The 360 degree radar
+is the car's surrounding awareness. Together they form a local safety bubble.
+The FPGA is responsible for real-time sensing, display, and emergency decisions,
+while the phone app provides human-friendly visualization and control.
+
+Recommended first deliverable
+-----------------------------
+Implement:
+  - UART radar receive and parser.
+  - Angle-distance cache.
+  - HDMI 360 radar display.
+  - 8-sector danger summary.
+  - Safety bubble stop signal.
+  - Bluetooth @Z sector summary frame.
+
+This is feasible on the FPGA, easy to demo, and leaves advanced mapping or path
+planning for later.

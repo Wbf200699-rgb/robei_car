@@ -1,0 +1,12 @@
+VCD info: dumpfile tb_onboard_exploration_controller.vcd opened for output.
+RESULT open_space exploration_state=2 cmd=1 reason=0
+RESULT invalid_front exploration_state=6 cmd=0 reason=0
+RESULT obstacle_escape exploration_state=3 cmd=2 sector_left_mm=700 sector_right_mm=1800
+RESULT footprint_block exploration_state=6 cmd=0
+RESULT manual_override mode=0 cmd=0 reason=1
+RESULT default_boundary pose_x_mm=6000 pose_heading=0 exploration_state=4 cmd=3
+RESULT configured_boundary high_x_cell=40 pose_x_mm=2050 exploration_state=6 cmd=0
+RESULT pause mode=0 cmd=0 reason=1
+RESULT final_state=0 stop_reason=1
+RESULT TEST_PASS onboard_exploration
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\onboard_exploration_parameter.v:514: $finish called at 6850000 (1ps)

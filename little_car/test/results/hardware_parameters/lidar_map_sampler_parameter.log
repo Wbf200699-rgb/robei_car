@@ -1,0 +1,11 @@
+VCD info: dumpfile tb_lidar_map_sampler.vcd opened for output.
+RESULT chunk part=0 seq=0 tick=0 crc=ab first=84b last=fff gap_cycles=1711
+RESULT chunk part=1 seq=0 tick=0 crc=83 first=fff last=fff gap_cycles=138
+RESULT chunk part=2 seq=0 tick=0 crc=68 first=fff last=fff gap_cycles=137
+RESULT chunk part=3 seq=0 tick=0 crc=cc first=fff last=fff gap_cycles=137
+RESULT chunk part=4 seq=0 tick=0 crc=b9 first=fff last=fff gap_cycles=137
+RESULT chunk part=5 seq=0 tick=0 crc=92 first=fff last=cbc gap_cycles=137
+RESULT scan_seq=0 tick_10ms=0 parts=6
+RESULT bin0=84B bin1=C7D bin2=FFF bin5=464 bin71=CBC
+RESULT TEST_PASS lidar_map_sampler
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\lidar_map_sampler_parameter.v:675: $finish called at 28050000 (1ps)

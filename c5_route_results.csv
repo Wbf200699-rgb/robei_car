@@ -1,0 +1,8 @@
+case,lf_speed,rf_speed,lr_speed,rr_speed,motor_blocked
+manual_forward_trimmed,650,750,800,625,0
+forward_blocked,0,0,0,0,1
+reverse_escape,-650,-750,-800,-625,0
+left_escape,-600,700,-750,575,0
+right_escape,600,-700,750,-575,0
+manual_stop,0,0,0,0,0
+automatic_forward,650,750,800,625,0

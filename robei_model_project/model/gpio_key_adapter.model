@@ -1,0 +1,14 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  wire sw1_n;&#xa;  wire sw2_n;&#xa;  wire sw3_n;&#xa;  wire sw4_n;&#xa;  wire sw5_n;&#xa;&#xa;  assign sw1_n = key_active_low ? key_pin1 : ~key_pin1;&#xa;  assign sw2_n = key_active_low ? key_pin2 : ~key_pin2;&#xa;  assign sw3_n = key_active_low ? key_pin3 : ~key_pin3;&#xa;  assign sw4_n = key_active_low ? key_pin4 : ~key_pin4;&#xa;  assign sw5_n = key_active_low ? key_pin5 : ~key_pin5;&#xa;&#xa;  assign key_up_n    = sw1_n;&#xa;  assign key_left_n  = sw2_n;&#xa;  assign key_right_n = sw3_n;&#xa;  assign key_down_n  = sw4_n;&#xa;  assign key_mid_n   = sw5_n;" Color="#d3d3d3" Comment="" Height="1080" Name="gpio_key_adapter" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin1" Parent="gpio_key_adapter" Side="left" Width="30" X="-0.01875" Y="0.128704"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin2" Parent="gpio_key_adapter" Side="left" Width="30" X="-0.01875" Y="0.271296"/>
+ <Port Color="#7fffd4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin3" Parent="gpio_key_adapter" Side="left" Width="30" X="-0.01875" Y="0.427778"/>
+ <Port Color="#f0ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin4" Parent="gpio_key_adapter" Side="left" Width="30" X="-0.01875" Y="0.556481"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin5" Parent="gpio_key_adapter" Side="left" Width="30" X="-0.01875" Y="0.699074"/>
+ <Port Color="#ffe4c4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_active_low" Parent="gpio_key_adapter" Side="left" Width="30" X="-0.01875" Y="0.841667"/>
+ <Port Color="#b8860b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_up_n" Parent="gpio_key_adapter" Side="right" Width="30" X="0.98125" Y="0.152778"/>
+ <Port Color="#ffebcd" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_down_n" Parent="gpio_key_adapter" Side="right" Width="30" X="0.98125" Y="0.319444"/>
+ <Port Color="#0000ff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_left_n" Parent="gpio_key_adapter" Side="right" Width="30" X="0.98125" Y="0.486111"/>
+ <Port Color="#8a2be2" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_right_n" Parent="gpio_key_adapter" Side="right" Width="30" X="0.98125" Y="0.652778"/>
+ <Port Color="#a52a2a" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_mid_n" Parent="gpio_key_adapter" Side="right" Width="30" X="0.98125" Y="0.819444"/>
+</Module>

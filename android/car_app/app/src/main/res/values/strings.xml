@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">智能车控制台</string>
+    <string name="bluetooth_disconnected">蓝牙：未连接</string>
+    <string name="bluetooth_connected">蓝牙：已连接</string>
+    <string name="bluetooth_connecting">蓝牙：正在连接...</string>
+    <string name="bluetooth_scanning">正在扫描附近 BLE 设备...</string>
+    <string name="bluetooth_ready_waiting">蓝牙已就绪，等待心跳回应</string>
+    <string name="bluetooth_off">蓝牙：BT OFF</string>
+    <string name="bluetooth_on">蓝牙：BT ON</string>
+    <string name="connect_bluetooth">连接蓝牙</string>
+    <string name="disconnect_bluetooth">断开连接</string>
+    <string name="select_bluetooth_device">选择 CH9141K 蓝牙设备</string>
+    <string name="scan_empty">正在扫描，请稍候...</string>
+    <string name="cancel">取消</string>
+    <string name="debug_log">调试日志</string>
+    <string name="copy_log">复制</string>
+    <string name="clear_log">清空</string>
+    <string name="log_copied">日志已复制</string>
+    <string name="log_empty">暂无日志可复制</string>
+</resources>

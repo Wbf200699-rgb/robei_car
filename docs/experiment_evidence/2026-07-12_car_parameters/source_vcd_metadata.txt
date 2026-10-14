@@ -1,0 +1,4 @@
+source_file=D:\Projects\Robei\little_car_new\little_car\build\car_param_controller_robei_test.vcd
+source_size_bytes=23488
+source_sha256=76d71b8d3e8e66d3b63d8f2f110403205b4cad378066812b642b2c94a19a93bd
+full_vcd_committed=true

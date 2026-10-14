@@ -1,0 +1,24 @@
+{
+  "format": "ROBEI_SD_RAW_V1",
+  "sector_size": 512,
+  "raw_region_start_lba": 2048,
+  "raw_region_sector_count": 63488,
+  "computer_partition_start_lba": 65536,
+  "superblock_primary_lba": 2048,
+  "superblock_backup_lba": 2049,
+  "hardware_probe_scratch_lba": 3072,
+  "map_payload_bytes": 8192,
+  "map_payload_sectors": 16,
+  "map_slot_a": {
+    "header_lba": 4096,
+    "payload_lba": 4097,
+    "commit_lba": 4113
+  },
+  "map_slot_b": {
+    "header_lba": 8192,
+    "payload_lba": 8193,
+    "commit_lba": 8209
+  },
+  "calibration_slot_a_lba": 12288,
+  "calibration_slot_b_lba": 12304
+}

@@ -1,0 +1,9 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="always @(*) begin&#xa;    if (v_de) begin&#xa;        if (pixel_x &lt; 12'd341) begin&#xa;            r = 8'hFF;&#xa;            g = 8'h00;&#xa;            b = 8'h00;&#xa;        end else if (pixel_x &lt; 12'd682) begin&#xa;            r = 8'h00;&#xa;            g = 8'hFF;&#xa;            b = 8'h00;&#xa;        end else begin&#xa;            r = 8'h00;&#xa;            g = 8'h00;&#xa;            b = 8'hFF;&#xa;        end&#xa;    end else begin&#xa;        r = 8'h00;&#xa;        g = 8'h00;&#xa;        b = 8'h00;&#xa;    end&#xa;end" Color="#d3d3d3" Comment="" Height="1080" Name="hdmi_pixel_shader" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="v_de" Parent="hdmi_pixel_shader" Side="left" Width="30" X="-0.01875" Y="0.237963"/>
+ <Port Color="#00ffff" Connect="" Datasize="12" Datatype="wire" Description="" Height="30" Inout="input" Name="pixel_x" Parent="hdmi_pixel_shader" Side="left" Width="30" X="-0.01875" Y="0.427778"/>
+ <Port Color="#7fffd4" Connect="" Datasize="12" Datatype="wire" Description="" Height="30" Inout="input" Name="pixel_y" Parent="hdmi_pixel_shader" Side="left" Width="30" X="-0.01875" Y="0.599074"/>
+ <Port Color="#f0ffff" Connect="" Datasize="8" Datatype="reg" Description="" Height="30" Inout="output" Name="r" Parent="hdmi_pixel_shader" Side="right" Width="30" X="0.98125" Y="0.263889"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="8" Datatype="reg" Description="" Height="30" Inout="output" Name="g" Parent="hdmi_pixel_shader" Side="right" Width="30" X="0.98125" Y="0.455556"/>
+ <Port Color="#ffe4c4" Connect="" Datasize="8" Datatype="reg" Description="" Height="30" Inout="output" Name="b" Parent="hdmi_pixel_shader" Side="right" Width="30" X="0.98125" Y="0.625"/>
+</Module>

@@ -1,0 +1,8 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  assign motor_enable = 1'b1;&#xa;  assign motor_forward_ms = 16'd2500;&#xa;  assign motor_turn_ms = 16'd550;&#xa;  assign motor_forward_speed = 10'd700;&#xa;  assign motor_turn_speed = 10'd650;" Color="#d3d3d3" Comment="" Height="1080" Name="temp_c5_motor_config_source" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="motor_enable" Parent="temp_c5_motor_config_source" Side="right" Width="30" X="0.98125" Y="0.14"/>
+ <Port Color="#00ffff" Connect="" Datasize="16" Datatype="wire" Description="" Height="30" Inout="output" Name="motor_forward_ms" Parent="temp_c5_motor_config_source" Side="right" Width="30" X="0.98125" Y="0.32"/>
+ <Port Color="#7fffd4" Connect="" Datasize="16" Datatype="wire" Description="" Height="30" Inout="output" Name="motor_turn_ms" Parent="temp_c5_motor_config_source" Side="right" Width="30" X="0.98125" Y="0.5"/>
+ <Port Color="#f0ffff" Connect="" Datasize="10" Datatype="wire" Description="" Height="30" Inout="output" Name="motor_forward_speed" Parent="temp_c5_motor_config_source" Side="right" Width="30" X="0.98125" Y="0.68"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="10" Datatype="wire" Description="" Height="30" Inout="output" Name="motor_turn_speed" Parent="temp_c5_motor_config_source" Side="right" Width="30" X="0.98125" Y="0.86"/>
+</Module>

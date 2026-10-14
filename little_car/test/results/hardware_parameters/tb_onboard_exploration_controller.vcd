@@ -1,0 +1,140 @@
+$date
+	Wed Oct 14 10:31:10 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module onboard_exploration_parameter $end
+$var reg 1 ! rst_n $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 1 " map_active $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 1 # map_paused $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 1 $ manual_mode $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 1 % lidar_new_scan $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 1 & obstacle_stop $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 16 ' sector_front_mm [15:0] $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 16 ( pose_x_mm [15:0] $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var reg 10 ) pose_heading [9:0] $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var wire 1 * auto_mode $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var wire 3 + auto_cmd [2:0] $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var wire 4 , exploration_state [3:0] $end
+$upscope $end
+$scope module onboard_exploration_parameter $end
+$var wire 4 - stop_reason [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 -
+b0 ,
+b0 +
+0*
+b0 )
+b110010000000 (
+b11111010000 '
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#90000
+1%
+1!
+#110000
+1*
+1"
+0%
+#150000
+b1 +
+b10 ,
+b0 -
+#390000
+1%
+b1111111111111111 '
+#410000
+0%
+#470000
+b0 +
+b110 ,
+#1730000
+1%
+b11111010 '
+1&
+#1750000
+b1 ,
+0%
+#1830000
+b10 +
+b11 ,
+#2430000
+1%
+#2450000
+0%
+#2470000
+b0 +
+b110 ,
+#3770000
+0*
+1$
+#3830000
+b1 -
+b0 ,
+#3970000
+1*
+1%
+b1011101110000 (
+b11111010000 '
+0&
+0$
+#3990000
+b10 +
+b11 ,
+b0 -
+0%
+#4710000
+b11 +
+b100 ,
+#5310000
+1%
+b100000000010 (
+#5330000
+0%
+#5590000
+b0 +
+b110 ,
+#6650000
+0*
+1#
+#6710000
+b1 -
+b0 ,
+#6850000

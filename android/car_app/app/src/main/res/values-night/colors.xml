@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">#0E1621</color>
+    <color name="panel_background">#172231</color>
+    <color name="panel_soft">#1D2A3B</color>
+    <color name="nav_background">#172231</color>
+    <color name="primary">#69A2FF</color>
+    <color name="primary_dark">#A9CCFF</color>
+    <color name="primary_soft">#213B60</color>
+    <color name="accent_green">#45C7A9</color>
+    <color name="accent_yellow">#E0A83B</color>
+    <color name="danger">#F06A6A</color>
+    <color name="text_primary">#F0F4F8</color>
+    <color name="text_secondary">#A7B5C5</color>
+    <color name="divider">#2A3A4D</color>
+    <color name="app_icon_background">#123A78</color>
+    <color name="hero_start">#173B62</color>
+    <color name="hero_end">#245C8E</color>
+    <color name="toolbar_background">#172231</color>
+    <color name="text_on_hero">#FFFFFFFF</color>
+    <color name="text_on_hero_muted">#C8D9EB</color>
+</resources>

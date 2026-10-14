@@ -1,0 +1,155 @@
+<!DOCTYPE Robei>
+<Module Class="module" Code="create_clock -name sys_clk -period 20.000 [get_ports clk]&#10;set_property PACKAGE_PIN U20 [get_ports bt_at]&#10;set_property IOSTANDARD LVCMOS33 [get_ports bt_at]&#10;set_property DRIVE 8 [get_ports bt_at]&#10;set_property PULLUP TRUE [get_ports bt_at]&#10;set_property SLEW SLOW [get_ports buzzer_out]&#10;set_property SLEW SLOW [get_ports bt_uart_tx]&#10;set_property SLEW SLOW [get_ports bt_at]&#10;set_property SLEW SLOW [get_ports c5_uart_tx]&#10;set_property PACKAGE_PIN K17 [get_ports lidar_uart_rx]&#10;set_property IOSTANDARD LVCMOS33 [get_ports lidar_uart_rx]&#10;set_property PULLUP TRUE [get_ports lidar_uart_rx]&#10;set_property PACKAGE_PIN J17 [get_ports lidar_uart_tx]&#10;set_property IOSTANDARD LVCMOS33 [get_ports lidar_uart_tx]&#10;set_property DRIVE 8 [get_ports lidar_uart_tx]&#10;set_property SLEW SLOW [get_ports lidar_uart_tx]&#10;set_property PULLUP TRUE [get_ports tof_i2c_scl]&#10;set_property PULLUP TRUE [get_ports tof_i2c_sda]&#10;set_property DRIVE 4 [get_ports tof_i2c_scl]&#10;set_property DRIVE 4 [get_ports tof_i2c_sda]&#10;set_property SLEW SLOW [get_ports tof_i2c_scl]&#10;set_property SLEW SLOW [get_ports tof_i2c_sda]&#10;set_property SLEW SLOW [get_ports tof_xshut0]&#10;set_property SLEW SLOW [get_ports tof_xshut1]&#10;set_property SLEW SLOW [get_ports tof_xshut2]&#10;set_property SLEW SLOW [get_ports tof_xshut3]&#10;set_property SLEW SLOW [get_ports tof_xshut4]&#10;set_property DRIVE 4 [get_ports sensor_spi_sclk]&#10;set_property DRIVE 4 [get_ports sensor_spi_mosi]&#10;set_property DRIVE 4 [get_ports pmw3901_cs_n]&#10;set_property DRIVE 4 [get_ports bmi0_acc_cs_n]&#10;set_property DRIVE 4 [get_ports bmi0_gyro_cs_n]&#10;set_property DRIVE 4 [get_ports bmi1_acc_cs_n]&#10;set_property DRIVE 4 [get_ports bmi1_gyro_cs_n]&#10;set_property SLEW SLOW [get_ports sensor_spi_sclk]&#10;set_property SLEW SLOW [get_ports sensor_spi_mosi]&#10;set_property SLEW SLOW [get_ports pmw3901_cs_n]&#10;set_property SLEW SLOW [get_ports bmi0_acc_cs_n]&#10;set_property SLEW SLOW [get_ports bmi0_gyro_cs_n]&#10;set_property SLEW SLOW [get_ports bmi1_acc_cs_n]&#10;set_property SLEW SLOW [get_ports bmi1_gyro_cs_n]&#10;set_property PULLUP TRUE [get_ports sensor_spi_sclk]&#10;set_property PULLUP TRUE [get_ports sensor_spi_miso]&#10;set_property PULLUP TRUE [get_ports pmw3901_cs_n]&#10;set_property PULLUP TRUE [get_ports bmi0_acc_cs_n]&#10;set_property PULLUP TRUE [get_ports bmi0_gyro_cs_n]&#10;set_property PULLUP TRUE [get_ports bmi1_acc_cs_n]&#10;set_property PULLUP TRUE [get_ports bmi1_gyro_cs_n]&#10;set_property PACKAGE_PIN P5 [get_ports uwb_uart_rx]&#10;set_property IOSTANDARD LVCMOS33 [get_ports uwb_uart_rx]&#10;set_property PULLUP TRUE [get_ports uwb_uart_rx]&#10;set_property PACKAGE_PIN R2 [get_ports uwb_uart_tx]&#10;set_property IOSTANDARD LVCMOS33 [get_ports uwb_uart_tx]&#10;set_property DRIVE 8 [get_ports uwb_uart_tx]&#10;set_property SLEW SLOW [get_ports uwb_uart_tx]&#10;set_property PACKAGE_PIN J1 [get_ports debug_uart_tx]&#10;set_property IOSTANDARD LVCMOS33 [get_ports debug_uart_tx]&#10;set_property DRIVE 8 [get_ports debug_uart_tx]&#10;set_property SLEW SLOW [get_ports debug_uart_tx]" Color="#d3d3d3" Device="xc7a50tfgg484" Family="artix7" Height="1402" Name="top" Parent="0" Type="const" Vendor="AMD" Width="2769" X="0" Y="0">
+ <Port Color="#0000ff" Description="" Drive="" Height="30" Name="E17" Parent="top" Pull="up" Slew="" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.4250000" />
+ <Port Color="#ffebcd" Description="" Drive="" Height="30" Name="F13" Parent="top" Pull="up" Slew="" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.2750000" />
+ <Port Color="#ffe4c4" Description="" Drive="" Height="30" Name="G13" Parent="top" Pull="up" Slew="" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0150000" Y="0.8750000" />
+ <Port Color="#b8860b" Description="" Drive="4" Height="30" Name="F16" Parent="top" Pull="up" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.1250000" />
+ <Port Color="#8a2be2" Description="" Drive="" Height="30" Name="F14" Parent="top" Pull="up" Slew="" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.5750000" />
+ <Port Color="#a52a2a" Description="" Drive="4" Height="30" Name="E14" Parent="top" Pull="none" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.7250000" />
+ <Port Color="#deb887" Description="" Drive="4" Height="30" Name="E13" Parent="top" Pull="none" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.9850000" Y="0.8750000" />
+ <Module Category="Current" Class="sys_route_gui_fsm_top" Code="  assign bt_at = 1'b1;" Color="#d3d3d3" Comment="" Height="1200" Name="sys_route_gui_fsm_top1" Parameters="" Parent="top" Type="model" Width="2300" X="330" Y="250">
+  <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="clk" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.0544198" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="rst_n" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.113159" />
+  <Port Color="#ffebcd" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_clk_p" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.0354161" />
+  <Port Color="#0000ff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_clk_n" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.0751512" />
+  <Port Color="#8a2be2" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_d0_p" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.114886" />
+  <Port Color="#a52a2a" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_d0_n" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.154621" />
+  <Port Color="#deb887" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_d1_p" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.194356" />
+  <Port Color="#5f9ea0" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_d1_n" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.234092" />
+  <Port Color="#7fff00" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_d2_p" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.273827" />
+  <Port Color="#d2691e" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="hdmi_d2_n" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.313562" />
+  <Port Color="#e9967a" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin1" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.171897" />
+  <Port Color="#8fbc8f" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin2" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.230636" />
+  <Port Color="#483d8b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin3" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.289375" />
+  <Port Color="#2f4f4f" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin4" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.348114" />
+  <Port Color="#2f4f4f" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_pin5" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.406853" />
+  <Port Color="#00ced1" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="ultrasonic_echo" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.465592" />
+  <Port Color="#9400d3" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="ultrasonic_trig" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.909588" />
+  <Port Color="#ff1493" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="buzzer_out" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.949323" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="tof_i2c_scl" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.18" Y="0.994" />
+  <Port Color="#fff8dc" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="inout" Name="tof_i2c_sda" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.28" Y="0.994" />
+  <Port Color="#dc143c" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="tof_xshut0" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.48" Y="0.994" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="tof_xshut1" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.56" Y="0.994" />
+  <Port Color="#00008b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="tof_xshut2" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.64" Y="0.994" />
+  <Port Color="#008b8b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="tof_xshut3" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.72" Y="0.994" />
+  <Port Color="#b8860b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="tof_xshut4" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.80" Y="0.994" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="sensor_spi_miso" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.10" Y="0.994" />
+  <Port Color="#fff8dc" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="sensor_spi_sclk" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.18" Y="0.994" />
+  <Port Color="#dc143c" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="sensor_spi_mosi" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.26" Y="0.994" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="pmw3901_cs_n" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.34" Y="0.994" />
+  <Port Color="#00008b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="bmi0_acc_cs_n" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.42" Y="0.994" />
+  <Port Color="#008b8b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="bmi0_gyro_cs_n" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.50" Y="0.994" />
+  <Port Color="#b8860b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="bmi1_acc_cs_n" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.58" Y="0.994" />
+  <Port Color="#ff1493" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="bmi1_gyro_cs_n" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.66" Y="0.994" />
+  <Port Color="#dc143c" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="bt_uart_rx" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.673192" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="bt_uart_tx" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.673192" />
+  <Port Color="#66c2a5" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="bt_at" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.703192" />
+  <Port Color="#dc143c" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="c5_uart_rx" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.733192" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="c5_uart_tx" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.733192" />
+  <Port Color="#7fffd4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="lidar_uart_rx" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.793192" />
+  <Port Color="#f0ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="lidar_uart_tx" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.793192" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="sd_cd" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.853192" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="sd_d1" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.883192" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="sd_d2" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.913192" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="sd_miso" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.823192" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="sd_cs_n" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.833192" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="sd_sclk" Parent="sys_route_gui_fsm_top1" Side="bottom" Width="30" X="0.90" Y="0.994" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="sd_mosi" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.873192" />
+  <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="uwb_uart_rx" Parent="sys_route_gui_fsm_top1" Side="left" Width="30" X="-0.00605938" Y="0.943192" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="uwb_uart_tx" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.923192" />
+  <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="debug_uart_tx" Parent="sys_route_gui_fsm_top1" Side="right" Width="30" X="0.993941" Y="0.953192" />
+ </Module>
+ <Port Color="#faebd7" Description="" Drive="" Height="30" Name="Y18" Parent="top" Pull="none" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.154779" />
+ <Port Color="#00ffff" Description="" Drive="" Height="30" Name="J20" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.237518" />
+ <Port Color="#7fffd4" Description="" Drive="8" Height="30" Name="Y8" Parent="top" Pull="none" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.320257" />
+ <Port Color="#f0ffff" Description="" Drive="" Height="30" Name="C22" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.0998573" />
+ <Port Color="#f5f5dc" Description="" Drive="" Height="30" Name="B22" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.210414" />
+ <Port Color="#ffe4c4" Description="" Drive="" Height="30" Name="B21" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.32097" />
+ <Port Color="#b8860b" Description="" Drive="" Height="30" Name="A21" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.431526" />
+ <Port Color="#ffebcd" Description="" Drive="" Height="30" Name="B20" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.542083" />
+ <Port Color="#0000ff" Description="" Drive="" Height="30" Name="A20" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.652639" />
+ <Port Color="#8a2be2" Description="" Drive="" Height="30" Name="A18" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.763195" />
+ <Port Color="#a52a2a" Description="" Drive="" Height="30" Name="A19" Parent="top" Pull="none" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.873752" />
+ <Port Color="#deb887" Description="" Drive="" Height="30" Name="J6" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.402996" />
+ <Port Color="#5f9ea0" Description="" Drive="" Height="30" Name="E3" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.485735" />
+ <Port Color="#7fff00" Description="" Drive="" Height="30" Name="H3" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.568474" />
+ <Port Color="#d2691e" Description="" Drive="" Height="30" Name="J5" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.651213" />
+ <Port Color="#ff7f50" Description="" Drive="" Height="30" Name="J4" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.733951" />
+ <Port Color="#6495ed" Description="" Drive="" Height="30" Name="D21" Parent="top" Pull="none" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.81669" />
+ <Port Color="#fff8dc" Description="" Drive="" Height="30" Name="E22" Parent="top" Pull="none" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.899429" />
+ <Port Color="#dc143c" Description="" Drive="" Height="30" Name="U21" Parent="top" Pull="up" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.137234" Y="0.978602" />
+ <Port Color="#00ffff" Description="" Drive="8" Height="30" Name="T21" Parent="top" Pull="none" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.279884" Y="0.978602" />
+ <Port Color="#dc143c" Description="" Drive="8" Height="30" Name="R14" Parent="top" Pull="none" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.422535" Y="0.978602" />
+ <Port Color="#00ffff" Description="" Drive="" Height="30" Name="P15" Parent="top" Pull="up" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.565186" Y="0.978602" />
+ <Port Color="#66c2a5" Description="" Drive="8" Height="30" Name="U20" Parent="top" Pull="up" Side="left" Voltage="LVCMOS33" Width="30" X="-0.0108342" Y="0.0720399" />
+ <Port Color="#7fffd4" Description="" Drive="" Height="30" Name="K17" Parent="top" Pull="up" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.707837" Y="0.978602" />
+ <Port Color="#f0ffff" Description="" Drive="8" Height="30" Name="J17" Parent="top" Pull="none" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.850488" Y="0.978602" />
+ <Port Color="#6495ed" Description="" Drive="" Height="30" Name="P19" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.12" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="" Height="30" Name="R19" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.24" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="N17" Parent="top" Pull="none" Side="top" Voltage="LVCMOS33" Width="30" X="0.36" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="P17" Parent="top" Pull="none" Side="top" Voltage="LVCMOS33" Width="30" X="0.48" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="M20" Parent="top" Pull="none" Side="top" Voltage="LVCMOS33" Width="30" X="0.60" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="N20" Parent="top" Pull="none" Side="top" Voltage="LVCMOS33" Width="30" X="0.72" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="L20" Parent="top" Pull="none" Side="top" Voltage="LVCMOS33" Width="30" X="0.84" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="A14" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.08" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="B15" Parent="top" Pull="none" Side="top" Voltage="LVCMOS33" Width="30" X="0.18" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="" Height="30" Name="A13" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.28" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="B13" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.38" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="F20" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.48" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="F19" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.58" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="C20" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.68" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="4" Height="30" Name="E19" Parent="top" Pull="up" Side="top" Voltage="LVCMOS33" Width="30" X="0.78" Y="-0.02" />
+ <Port Color="#6495ed" Description="" Drive="" Height="30" Name="P5" Parent="top" Pull="up" Slew="SLOW" Side="right" Voltage="LVCMOS33" Width="30" X="0.989166" Y="0.910000" />
+ <Port Color="#6495ed" Description="" Drive="8" Height="30" Name="R2" Parent="top" Pull="none" Slew="SLOW" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.700000" Y="0.978602" />
+ <Port Color="#6495ed" Description="" Drive="8" Height="30" Name="J1" Parent="top" Pull="none" Slew="SLOW" Side="bottom" Voltage="LVCMOS33" Width="30" X="0.790000" Y="0.978602" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;clk" Name="0" Parent="top" To="top&gt;Y18" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;rst_n" Name="0" Parent="top" To="top&gt;J20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;buzzer_out" Name="0" Parent="top" To="top&gt;Y8" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;key_pin1" Name="0" Parent="top" To="top&gt;J6" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;key_pin2" Name="0" Parent="top" To="top&gt;E3" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;key_pin3" Name="0" Parent="top" To="top&gt;H3" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;key_pin4" Name="0" Parent="top" To="top&gt;J5" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;key_pin5" Name="0" Parent="top" To="top&gt;J4" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;ultrasonic_trig" Name="0" Parent="top" To="top&gt;E22" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;ultrasonic_echo" Name="0" Parent="top" To="top&gt;D21" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_clk_p" Name="0" Parent="top" To="top&gt;C22" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_clk_n" Name="0" Parent="top" To="top&gt;B22" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_d0_p" Name="0" Parent="top" To="top&gt;B21" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_d0_n" Name="0" Parent="top" To="top&gt;A21" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_d1_p" Name="0" Parent="top" To="top&gt;B20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_d1_n" Name="0" Parent="top" To="top&gt;A20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_d2_n" Name="0" Parent="top" To="top&gt;A19" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;hdmi_d2_p" Name="0" Parent="top" To="top&gt;A18" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bt_uart_tx" Name="0" Parent="top" To="top&gt;T21" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bt_at" Name="0" Parent="top" To="top&gt;U20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bt_uart_rx" Name="0" Parent="top" To="top&gt;U21" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;c5_uart_tx" Name="0" Parent="top" To="top&gt;R14" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;c5_uart_rx" Name="0" Parent="top" To="top&gt;P15" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;lidar_uart_rx" Name="0" Parent="top" To="top&gt;K17" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;lidar_uart_tx" Name="0" Parent="top" To="top&gt;J17" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_i2c_scl" Name="tof_i2c_scl_P19" Parent="top" To="top&gt;P19" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_i2c_sda" Name="tof_i2c_sda_R19" Parent="top" To="top&gt;R19" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_xshut0" Name="tof_xshut0_N17" Parent="top" To="top&gt;N17" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_xshut1" Name="tof_xshut1_P17" Parent="top" To="top&gt;P17" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_xshut2" Name="tof_xshut2_M20" Parent="top" To="top&gt;M20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_xshut3" Name="tof_xshut3_N20" Parent="top" To="top&gt;N20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;tof_xshut4" Name="tof_xshut4_L20" Parent="top" To="top&gt;L20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sensor_spi_sclk" Name="sensor_spi_sclk_A14" Parent="top" To="top&gt;A14" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sensor_spi_mosi" Name="sensor_spi_mosi_B15" Parent="top" To="top&gt;B15" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sensor_spi_miso" Name="sensor_spi_miso_A13" Parent="top" To="top&gt;A13" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;pmw3901_cs_n" Name="pmw3901_cs_n_B13" Parent="top" To="top&gt;B13" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bmi0_acc_cs_n" Name="bmi0_acc_cs_n_F20" Parent="top" To="top&gt;F20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bmi0_gyro_cs_n" Name="bmi0_gyro_cs_n_F19" Parent="top" To="top&gt;F19" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bmi1_acc_cs_n" Name="bmi1_acc_cs_n_C20" Parent="top" To="top&gt;C20" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;bmi1_gyro_cs_n" Name="bmi1_gyro_cs_n_E19" Parent="top" To="top&gt;E19" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_sclk" Name="sd_sclk_E13" Parent="top" To="top&gt;E13" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_mosi" Name="sd_mosi_E14" Parent="top" To="top&gt;E14" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_miso" Name="sd_miso_F14" Parent="top" To="top&gt;F14" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_cs_n" Name="sd_cs_n_F16" Parent="top" To="top&gt;F16" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_cd" Name="sd_cd_G13" Parent="top" To="top&gt;G13" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_d1" Name="sd_d1_F13" Parent="top" To="top&gt;F13" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;sd_d2" Name="sd_d2_E17" Parent="top" To="top&gt;E17" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;uwb_uart_rx" Name="0" Parent="top" To="top&gt;P5" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;uwb_uart_tx" Name="0" Parent="top" To="top&gt;R2" />
+ <Wire Datasize="1" Datatype="wire" From="top#sys_route_gui_fsm_top1&gt;debug_uart_tx" Name="0" Parent="top" To="top&gt;J1" />
+</Module>

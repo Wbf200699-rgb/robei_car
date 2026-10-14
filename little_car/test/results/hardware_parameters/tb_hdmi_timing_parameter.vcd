@@ -1,0 +1,125 @@
+$date
+	Wed Oct 14 10:31:08 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module hdmi_timing_parameter $end
+$var reg 1 ! rst_n $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$var wire 1 " hsync $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$var wire 1 # vsync $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$var wire 1 $ v_de $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$var wire 12 % pixel_x [11:0] $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$var wire 12 & pixel_y [11:0] $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$scope module hdmi_timing_gen0 $end
+$var reg 12 ' h_cnt [11:0] $end
+$upscope $end
+$upscope $end
+$scope module hdmi_timing_parameter $end
+$scope module hdmi_timing_gen0 $end
+$var reg 12 ( v_cnt [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+0#
+0"
+0!
+$end
+#25000
+b1 %
+1$
+b1 '
+1!
+#30000
+b0 %
+b0 '
+#35000
+b1 %
+b1 '
+#40000
+b1001010111 &
+b1111111111 %
+b1001010111 (
+b1111111111 '
+#45000
+b10000000000 %
+b10000000000 '
+#50000
+b0 &
+b0 (
+#55000
+b0 %
+b10000000001 '
+0$
+#60000
+b10000100111 '
+#65000
+b10000101000 '
+#75000
+b10000101001 '
+1"
+#80000
+b10010001011 '
+#85000
+b10010001100 '
+#95000
+b10010001101 '
+0"
+#100000
+b1001100011 (
+b0 '
+#105000
+b1 '
+#110000
+b1001100100 (
+b0 '
+#115000
+b1 '
+1#
+#120000
+b1001101101 (
+b0 '
+#125000
+b1 '
+#130000
+b1001101110 (
+b0 '
+#135000
+b1 '
+0#
+#140000
+b1010000100 (
+b10100101011 '
+#145000
+b0 (
+b0 '
+#155000
+b1 %
+b1 '
+1$
+#156000

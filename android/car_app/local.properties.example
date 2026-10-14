@@ -1,0 +1,5 @@
+# Copy to local.properties and replace with your own Android SDK location.
+# Android Studio normally writes sdk.dir automatically.
+sdk.dir=C:/Users/YOUR_USER/AppData/Local/Android/Sdk
+uwb.serverUrl=wss://relay.example.invalid/ws/mobile
+# Set uwb.mobileToken locally, or export UWB_MOBILE_TOKEN; never commit it.

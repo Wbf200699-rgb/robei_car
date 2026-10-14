@@ -1,0 +1,9 @@
+VCD info: dumpfile tb_rplidar_c1_uart_restart.vcd opened for output.
+RESULT decoded quality=10 angle_q6=0 distance_q2=1600 front_mm=65535 front_valid=0 stop=0
+RESULT sectors_mm=65535,65535,65535,65535,65535,65535,65535,65535
+RESULT startup_sequence=STOP,SCAN
+RESULT descriptor_retry_count=1
+RESULT descriptor_loss_raw_node_fallback=1
+RESULT online_requires_valid_sample=1
+RESULT TEST_PASS rplidar_protocol
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\rplidar_protocol_parameter.v:766: $finish called at 411000 (1ps)

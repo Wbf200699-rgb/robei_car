@@ -1,0 +1,6 @@
+VCD info: dumpfile tb_linkpg_tag_position_uart.vcd opened for output.
+RESULT start_frame=0110003B0001020004A318
+RESULT position_cm=127,-42,11
+RESULT packets=4 crc_errors=1 framing_errors=0 start_requests=4 online=0 good=1
+RESULT TEST_PASS linkpg_tag_position_uart
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\linkpg_uart_parameter.v:757: $finish called at 106430000 (1ps)

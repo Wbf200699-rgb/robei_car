@@ -1,0 +1,45 @@
+{
+  "port": "COM10",
+  "baud_bps": 115200,
+  "modbus_id": 1,
+  "ranging_method": "HDS-TWR",
+  "positioning_mode": "one_to_one",
+  "role": "main_anchor",
+  "secondary_anchor_id": 0,
+  "tag_id": 0,
+  "channel_code": 0,
+  "air_rate_code": 1,
+  "enabled_anchor_mask": 15,
+  "anchor_coordinates_cm": {
+    "A": [
+      0,
+      0,
+      0
+    ],
+    "B": [
+      0,
+      0,
+      0
+    ],
+    "C": [
+      0,
+      0,
+      0
+    ],
+    "D": [
+      0,
+      0,
+      0
+    ]
+  },
+  "run_mode": "stopped",
+  "hardware_positioning": true,
+  "tag_count": 4,
+  "tag_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "output_flags": 3
+}

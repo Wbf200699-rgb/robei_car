@@ -1,0 +1,4 @@
+source_file=D:\Projects\Robei\little_car_new\little_car\build\c5_motor_frame_driver_robei_test.vcd
+source_size_bytes=2491289433
+source_sha256=4045cc56e875b95172a2dd5907e5e8f725f633da09807aad7f1b80a9eddb508e
+extracted_transition_count=1053

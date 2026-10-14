@@ -1,0 +1,8 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="assign data_r = pixel_de ? rgb_data[23:16] : 8'h00;&#xa;assign data_g = pixel_de ? rgb_data[15:8]  : 8'h00;&#xa;assign data_b = pixel_de ? rgb_data[7:0]   : 8'h00;" Color="#d3d3d3" Comment="" Height="1080" Name="hdmi_rgb_splitter" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="24" Datatype="wire" Description="" Height="30" Inout="input" Name="rgb_data" Parent="hdmi_rgb_splitter" Side="left" Width="30" X="-0.01875" Y="0.275"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="pixel_de" Parent="hdmi_rgb_splitter" Side="left" Width="30" X="-0.01875" Y="0.615741"/>
+ <Port Color="#7fffd4" Connect="" Datasize="8" Datatype="wire" Description="" Height="30" Inout="output" Name="data_r" Parent="hdmi_rgb_splitter" Side="right" Width="30" X="0.98125" Y="0.200926"/>
+ <Port Color="#f0ffff" Connect="" Datasize="8" Datatype="wire" Description="" Height="30" Inout="output" Name="data_g" Parent="hdmi_rgb_splitter" Side="right" Width="30" X="0.98125" Y="0.439815"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="8" Datatype="wire" Description="" Height="30" Inout="output" Name="data_b" Parent="hdmi_rgb_splitter" Side="right" Width="30" X="0.98125" Y="0.666667"/>
+</Module>

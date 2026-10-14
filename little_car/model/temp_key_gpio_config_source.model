@@ -1,0 +1,4 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="assign key_active_low = 1'b1;" Color="#d3d3d3" Comment="" Height="1080" Name="temp_key_gpio_config_source" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_active_low" Parent="temp_key_gpio_config_source" Side="right" Width="30" X="0.98125" Y="0.515741"/>
+</Module>

@@ -1,0 +1,97 @@
+$date
+	Wed Oct 14 10:31:09 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module rplidar_protocol_parameter $end
+$var reg 1 ! rst_n $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var reg 1 " scan_enable $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 1 # lidar_uart_tx $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 1 $ lidar_online $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 1 % scan_active $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 1 & sample_valid $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 1 ' new_scan $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 6 ( quality [5:0] $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 15 ) angle_q6 [14:0] $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 16 * distance_q2 [15:0] $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 16 + front_distance_mm [15:0] $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$var wire 1 , obstacle_stop $end
+$upscope $end
+$scope module rplidar_protocol_parameter $end
+$scope module rplidar_c1_uart0 $end
+$var reg 4 - cmd_state [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 -
+0,
+b1111111111111111 +
+b0 *
+b0 )
+b0 (
+0'
+0&
+0%
+0$
+1#
+1"
+0!
+$end
+#50000
+1!
+#100000
+b110 -
+#110000
+b1000 -
+#120000
+b110 -
+#130000
+b111 -
+1%
+#140000
+0%
+b110 -
+#290000
+b111 -
+1%
+#390000
+1'
+b11001000000 *
+b1010 (
+1&
+#410000
+0'
+0&
+1$
+#411000

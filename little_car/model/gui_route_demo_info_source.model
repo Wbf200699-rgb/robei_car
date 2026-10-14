@@ -1,0 +1,5 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  assign system_info = 2'b01;&#xa;&#xa;  // Low bits are earlier steps:&#xa;  // 11 forward, 01 right, 10 left, 00 stop.&#xa;  assign route_info = {&#xa;    40'd0,&#xa;    2'b11, 2'b10, 2'b11, 2'b01,&#xa;    2'b11, 2'b01, 2'b11, 2'b10,&#xa;    2'b11, 2'b01, 2'b11, 2'b11&#xa;  };" Color="#d3d3d3" Comment="" Height="1080" Name="gui_route_demo_info_source" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="2" Datatype="wire" Description="" Height="30" Inout="output" Name="system_info" Parent="gui_route_demo_info_source" Side="right" Width="30" X="0.98125" Y="0.319444"/>
+ <Port Color="#00ffff" Connect="" Datasize="64" Datatype="wire" Description="" Height="30" Inout="output" Name="route_info" Parent="gui_route_demo_info_source" Side="right" Width="30" X="0.98125" Y="0.652778"/>
+</Module>

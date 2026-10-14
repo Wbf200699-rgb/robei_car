@@ -1,0 +1,57 @@
+Little car lidar redo requirements
+
+Baseline:
+- Start from origin/main stable Bluetooth/C5 chassis version.
+- Keep the original route GUI renderer on HDMI. Do not replace it with a simplified full-screen status renderer.
+- Do not use FPGA IP cores. Existing primitive-based HDMI clock/serializer code remains allowed.
+
+Hardware:
+- C5 motor UART: FPGA TX R14, FPGA RX P15.
+- CH9141K Bluetooth UART: FPGA TX T21, FPGA RX U21, AT U20 high.
+- RPLIDAR C1 UART over GPIO:
+  - RPLIDAR TX -> FPGA K17 / lidar_uart_rx
+  - RPLIDAR RX -> FPGA J17 / lidar_uart_tx
+  - GND common with FPGA
+
+Behavior:
+- Physical keys and Bluetooth controls remain separate inputs, merged only at the command layer.
+- Route editing/running still works from the on-car keys.
+- Parameter setup is Bluetooth-only. Physical keys never enter parameter mode
+  and remain available for route editing/running.
+- Bluetooth controls overall speed, route step length, LF/RF/LR/RR default
+  wheel speeds, and lidar safe distance.
+- Lidar data is not drawn as a map on HDMI.
+- Lidar obstacle stop is merged with the existing ultrasonic obstacle stop.
+- Ultrasonic obstacle behavior and thresholds are unchanged.
+- Obstacle protection approximates the car as a rectangular footprint:
+  - front and narrow front +/-15 degree distance use the configurable safe distance
+  - front-right and front-left use the configurable safe distance plus 150 mm
+  - right and left use a fixed 220 mm side guard
+  - rear sectors are reported but do not currently trigger a stop
+
+Configurable parameters:
+- Overall speed
+- Route step length
+- LF/RF/LR/RR default wheel speed trim
+- Lidar safe distance
+
+Bluetooth protocol additions:
+- App continues sending heartbeat P once per second.
+- FPGA replies @PONG\n.
+- Existing single-byte control keys remain.
+- H enters manual mode and immediately stops the motors.
+- O returns to automatic route mode and immediately stops manual motion.
+- In manual mode:
+  - W/U drives forward
+  - S drives backward
+  - A/L turns left in place
+  - D/R turns right in place
+  - C/M stops
+  - the app must repeat a held direction every 100 ms
+  - FPGA stops automatically after 300 ms without a direction refresh
+- E enables lidar scanning; Q sends the lidar stop command and disables scanning.
+- H/O/E/Q and accepted control keys reply with @K<key>\n.
+- The packet layouts originally described here are historical and must not be
+  used for new mobile builds.
+- The authoritative current @S/@L layouts, exact lengths, parameter fields,
+  diagnostics, and sequence rules are in docs/mobile_app_handoff.md.

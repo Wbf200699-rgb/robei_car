@@ -1,0 +1,14 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  assign key_up_n_out = route_key_lock ? 1'b1 : key_up_n_in;&#xa;  assign key_down_n_out = route_key_lock ? 1'b1 : key_down_n_in;&#xa;  assign key_left_n_out = route_key_lock ? 1'b1 : key_left_n_in;&#xa;  assign key_right_n_out = route_key_lock ? 1'b1 : key_right_n_in;&#xa;  assign key_mid_n_out = route_key_lock ? 1'b1 : key_mid_n_in;" Color="#d3d3d3" Comment="" Height="1080" Name="route_key_lock_gate" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="route_key_lock" Parent="route_key_lock_gate" Side="left" Width="30" X="-0.01875" Y="0.125"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_up_n_in" Parent="route_key_lock_gate" Side="left" Width="30" X="-0.01875" Y="0.275"/>
+ <Port Color="#7fffd4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_down_n_in" Parent="route_key_lock_gate" Side="left" Width="30" X="-0.01875" Y="0.425"/>
+ <Port Color="#f0ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_left_n_in" Parent="route_key_lock_gate" Side="left" Width="30" X="-0.01875" Y="0.575"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_right_n_in" Parent="route_key_lock_gate" Side="left" Width="30" X="-0.01875" Y="0.725"/>
+ <Port Color="#ffe4c4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="key_mid_n_in" Parent="route_key_lock_gate" Side="left" Width="30" X="-0.01875" Y="0.875"/>
+ <Port Color="#b8860b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_up_n_out" Parent="route_key_lock_gate" Side="right" Width="30" X="0.98125" Y="0.14"/>
+ <Port Color="#ffebcd" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_down_n_out" Parent="route_key_lock_gate" Side="right" Width="30" X="0.98125" Y="0.32"/>
+ <Port Color="#0000ff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_left_n_out" Parent="route_key_lock_gate" Side="right" Width="30" X="0.98125" Y="0.5"/>
+ <Port Color="#8a2be2" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_right_n_out" Parent="route_key_lock_gate" Side="right" Width="30" X="0.98125" Y="0.68"/>
+ <Port Color="#a52a2a" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="key_mid_n_out" Parent="route_key_lock_gate" Side="right" Width="30" X="0.98125" Y="0.86"/>
+</Module>

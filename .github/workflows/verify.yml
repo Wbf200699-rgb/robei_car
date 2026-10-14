@@ -1,0 +1,52 @@
+name: Verify source and simulations
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-and-rtl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r server/requirements-dev.txt
+      - run: sudo apt-get update && sudo apt-get install -y iverilog
+      - run: python tools/check_repository.py
+      - run: python tools/generate_vehicle_geometry.py --check
+      - run: python -m unittest tools.test_robei_converter tools.test_uwb_test_telemetry
+      - run: python -m pytest server/tests -q
+      - run: python tools/prepare_fpga_sources.py
+      - run: python tools/run_hardware_parameter_tests.py
+      - run: python tools/check_repository.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compact-rtl-waveforms
+          path: little_car/test/results/hardware_parameters/
+  android:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: android/car_app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+      - run: bash gradlew testDebugUnitTest :app:assembleDebug :app:lintDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: debug-apk-and-reports
+          path: |
+            android/car_app/app/build/outputs/apk/debug/*.apk
+            android/car_app/app/build/reports/

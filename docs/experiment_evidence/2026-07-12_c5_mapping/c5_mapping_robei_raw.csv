@@ -1,0 +1,6 @@
+case,lf_pulse,rf_pulse,lr_pulse,rr_pulse
+forward_700,2200,800,2200,800
+reverse_700,800,2200,800,2200
+spin_left_650,850,850,850,850
+spin_right_650,2150,2150,2150,2150
+wheel_trim_sample,2150,750,2300,875

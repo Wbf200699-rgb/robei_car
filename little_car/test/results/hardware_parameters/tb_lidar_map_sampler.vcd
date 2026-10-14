@@ -1,0 +1,157 @@
+$date
+	Wed Oct 14 10:31:09 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module lidar_map_sampler_parameter $end
+$var reg 1 ! rst_n $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var reg 1 " scan_enable $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var reg 1 # sample_valid $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var reg 1 $ new_scan $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var reg 6 % quality [5:0] $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var reg 15 & angle_q6 [14:0] $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var reg 16 ' distance_q2 [15:0] $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var wire 1 ( map_chunk_valid $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var wire 8 ) map_scan_seq [7:0] $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var wire 3 * map_part [2:0] $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var wire 8 + map_chunk_crc [7:0] $end
+$upscope $end
+$scope module lidar_map_sampler_parameter $end
+$var wire 16 , map_drop_count [15:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+b0 '
+b0 &
+b0 %
+0$
+0#
+0"
+0!
+$end
+#90000
+1"
+1!
+#100000
+1#
+b111110100000 '
+b1000000 &
+b10100 %
+1$
+#120000
+0$
+0#
+#2120000
+1#
+b1001011000000 '
+b10100000 &
+b11110 %
+#2140000
+0#
+#4140000
+1#
+b1111101000000 '
+b111100000 &
+b101101 %
+#4160000
+0#
+#6160000
+1#
+b11111010000 '
+b1100100000 &
+b0 %
+#6180000
+0#
+#8180000
+1#
+b1100100000000 '
+b11011100000 &
+b1010 %
+#8200000
+0#
+#10200000
+1#
+b10111011100000 '
+b101100101100000 &
+b101000 %
+#10220000
+0#
+#12220000
+1#
+b110010000000 '
+b0 &
+b1000 %
+1$
+#12240000
+0$
+0#
+#12950000
+1(
+b10101011 +
+#14250000
+b1 *
+0(
+#16970000
+1(
+b10000011 +
+#16990000
+b10 *
+0(
+#19710000
+1(
+b1101000 +
+#19730000
+b11 *
+0(
+#22450000
+1(
+b11001100 +
+#22470000
+b100 *
+0(
+#25190000
+1(
+b10111001 +
+#25210000
+b101 *
+0(
+#27930000
+1(
+b10010010 +
+#27950000
+b0 *
+0(
+#28050000

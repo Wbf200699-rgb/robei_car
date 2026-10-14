@@ -1,0 +1,5 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="assign tmds_clk_pattern = 10'b1111100000;&#xa;assign gnd_bit = 1'b0;" Color="#d3d3d3" Comment="" Height="1080" Name="hdmi_const" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="10" Datatype="wire" Description="" Height="30" Inout="output" Name="tmds_clk_pattern" Parent="hdmi_const" Side="right" Width="30" X="0.98125" Y="0.319444"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="gnd_bit" Parent="hdmi_const" Side="right" Width="30" X="0.98125" Y="0.652778"/>
+</Module>

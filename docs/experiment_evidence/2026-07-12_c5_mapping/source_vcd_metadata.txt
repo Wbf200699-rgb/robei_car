@@ -1,0 +1,4 @@
+source_file=D:\Projects\Robei\little_car_new\little_car\build\c5_motor_mapping_robei_test.vcd
+source_size_bytes=70411587
+source_sha256=766a3961250bc8de19a44d3f24c38d87cc0fdcd7cb29e43bb5963a8477d887aa
+extracted_transition_count=1845

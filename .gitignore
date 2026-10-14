@@ -1,0 +1,87 @@
+# Build and simulation outputs
+little_car/build/
+little_car/.Xil/
+.Xil/
+little_car/xsim.dir/
+
+# Generated FPGA artifacts
+*.bit
+*.bin
+*.rpt
+*.jou
+*.log
+*.str
+*.wdb
+*.vcd
+*.fst
+clockInfo.txt
+dfx_runtime.txt
+
+# Local archives and backups
+*.zip
+*.7z
+*.rar
+*.bak
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+~$*.xlsx
+__pycache__/
+*.py[cod]
+
+# Local UWB gateway/server configuration and Python environment
+esp32/uwb_gateway/gateway_secrets.h
+tools/.cache/
+server/.env
+server/.venv/
+server/__pycache__/
+server/.pytest_cache/
+server/data/runtime/
+
+# Local build, hardware-debug and UI-capture artifacts
+temp/
+%SystemDrive%/
+hs_err_pid*.dmp
+tight_setup_hold_pins.txt
+.codex-*.png
+.codex-*.xml
+phone*.png
+vl53*.png
+android/car_app/.codex-*.png
+android/car_app/.codex-*.xml
+esp32/**/build*/
+
+little_car/model/*.model.bak_*
+# RobeiEDA regenerates this directory during compile, synthesis, and routing.
+robei_model_project/build/
+
+# Public portfolio hygiene
+.venv/
+**/.pytest_cache/
+**/.gradle/
+**/.idea/
+**/local.properties
+**/gateway_secrets.h
+**/.env
+**/.env.*
+!**/.env.example
+*.jks
+*.keystore
+*.p12
+*.pem
+*.apk
+*.aab
+android/car_app/**/build/
+little_car/verilog/
+little_car/backup/
+little_car/change/
+docs/media/*
+!docs/media/README.md
+
+# Small, reviewed evidence is intentionally retained.
+!little_car/test/results/hardware_parameters/*.vcd
+!little_car/test/results/hardware_parameters/*.log
+!docs/experiment_evidence/**/*.vcd

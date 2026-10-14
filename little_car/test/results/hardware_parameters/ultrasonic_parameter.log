@@ -1,0 +1,9 @@
+VCD info: dumpfile tb_ultrasonic_parameter.vcd opened for output.
+RESULT echo_case requested_cm=5 measured_cm=5 pulse_cycles=14500 stop=1
+RESULT echo_case requested_cm=19 measured_cm=19 pulse_cycles=55100 stop=1
+RESULT echo_case requested_cm=20 measured_cm=20 pulse_cycles=58000 stop=0
+RESULT echo_case requested_cm=35 measured_cm=35 pulse_cycles=101500 stop=0
+RESULT timeout_cycles=1500000 timeout_us=30000 timeout_distance=FFFF
+RESULT trigger_cycles=499 trigger_us=10 period_cycles=3000000 period_ms=60 cycles_per_cm=2900
+RESULT TEST_PASS ultrasonic_parameter
+E:\desktop\little_car_new-main\robei_car\little_car\test\verilog\ultrasonic_parameter.v:283: $finish called at 4592371000 (1ps)

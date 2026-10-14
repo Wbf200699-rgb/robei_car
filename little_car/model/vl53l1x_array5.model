@@ -1,0 +1,20 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  assign xshut0 = 1&#x27;b0;&#xa;  assign xshut1 = 1&#x27;b0;&#xa;  assign xshut2 = 1&#x27;b0;&#xa;  assign xshut3 = 1&#x27;b0;&#xa;  assign xshut4 = 1&#x27;b0;&#xa;  assign i2c_scl = 1&#x27;b1;&#xa;  assign i2c_sda = 1&#x27;bz;&#xa;&#xa;  always @(*) begin&#xa;    initialization_done = 1&#x27;b0;&#xa;    sensor_online = 5&#x27;b00000;&#xa;    distance_valid = 5&#x27;b00000;&#xa;    distance_mm = {5{16&#x27;hFFFF}};&#xa;    distance_update_pulse = 1&#x27;b0;&#xa;    distance_update_sensor = 3&#x27;d0;&#xa;    error_count = 16&#x27;d0;&#xa;  end" Color="#d3d3d3" Comment="" Height="1080" Name="vl53l1x_array5" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="clk" Parent="vl53l1x_array5" Side="left" Width="30" X="-0.01875" Y="0.2"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="rst_n" Parent="vl53l1x_array5" Side="left" Width="30" X="-0.01875" Y="0.5"/>
+ <Port Color="#7fffd4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="enable" Parent="vl53l1x_array5" Side="left" Width="30" X="-0.01875" Y="0.8"/>
+ <Port Color="#f0ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="xshut0" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.08461538"/>
+ <Port Color="#f5f5dc" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="xshut1" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.1538462"/>
+ <Port Color="#ffe4c4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="xshut2" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.2230769"/>
+ <Port Color="#b8860b" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="xshut3" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.2923077"/>
+ <Port Color="#ffebcd" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="xshut4" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.3615385"/>
+ <Port Color="#0000ff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="i2c_scl" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.4307692"/>
+ <Port Color="#8a2be2" Connect="" Datasize="1" Datatype="reg" Description="" Height="30" Inout="output" Name="initialization_done" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.5"/>
+ <Port Color="#a52a2a" Connect="" Datasize="5" Datatype="reg" Description="" Height="30" Inout="output" Name="sensor_online" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.5692308"/>
+ <Port Color="#deb887" Connect="" Datasize="5" Datatype="reg" Description="" Height="30" Inout="output" Name="distance_valid" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.6384615"/>
+ <Port Color="#5f9ea0" Connect="" Datasize="80" Datatype="reg" Description="" Height="30" Inout="output" Name="distance_mm" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.7076923"/>
+ <Port Color="#7fff00" Connect="" Datasize="1" Datatype="reg" Description="" Height="30" Inout="output" Name="distance_update_pulse" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.7769231"/>
+ <Port Color="#d2691e" Connect="" Datasize="3" Datatype="reg" Description="" Height="30" Inout="output" Name="distance_update_sensor" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.8461538"/>
+ <Port Color="#ff7f50" Connect="" Datasize="16" Datatype="reg" Description="" Height="30" Inout="output" Name="error_count" Parent="vl53l1x_array5" Side="right" Width="30" X="0.98125" Y="0.9153846"/>
+ <Port Color="#6495ed" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="inout" Name="i2c_sda" Parent="vl53l1x_array5" Side="bottom" Width="30" X="0.5" Y="0.9722222"/>
+</Module>

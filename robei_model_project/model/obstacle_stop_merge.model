@@ -1,0 +1,6 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="  assign obstacle_stop = ultrasonic_stop | lidar_stop;" Color="#d3d3d3" Comment="" Height="1080" Name="obstacle_stop_merge" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="ultrasonic_stop" Parent="obstacle_stop_merge" Side="left" Width="30" X="-0.01875" Y="0.275"/>
+ <Port Color="#00ffff" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="input" Name="lidar_stop" Parent="obstacle_stop_merge" Side="left" Width="30" X="-0.01875" Y="0.725"/>
+ <Port Color="#7fffd4" Connect="" Datasize="1" Datatype="wire" Description="" Height="30" Inout="output" Name="obstacle_stop" Parent="obstacle_stop_merge" Side="right" Width="30" X="0.98125" Y="0.5"/>
+</Module>

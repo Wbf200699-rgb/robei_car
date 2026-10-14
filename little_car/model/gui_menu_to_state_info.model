@@ -1,0 +1,5 @@
+<!DOCTYPE Robei>
+<Module Category="Current" Class="module" Code="&#xa;  always @(*) begin&#xa;    case (menu_info)&#xa;      2'b01: state_info = 5'b00001;&#xa;      2'b11: state_info = 5'b00011;&#xa;      default: state_info = 5'b00000;&#xa;    endcase&#xa;  end" Color="#d3d3d3" Comment="" Height="1080" Name="gui_menu_to_state_info" Parameters="" Parent="0" Type="model" Width="1600" X="0" Y="0">
+ <Port Color="#faebd7" Connect="" Datasize="2" Datatype="wire" Description="" Height="30" Inout="input" Name="menu_info" Parent="gui_menu_to_state_info" Side="left" Width="30" X="-0.01875" Y="0.486111"/>
+ <Port Color="#00ffff" Connect="" Datasize="5" Datatype="wire" Description="" Height="30" Inout="output" Name="state_info" Parent="gui_menu_to_state_info" Side="right" Width="30" X="0.98125" Y="0.486111"/>
+</Module>

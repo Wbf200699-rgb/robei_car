@@ -1,0 +1,79 @@
+<robei_model_project name="robei_model_project" parent="0" type="proj">
+ <model name="model" parent="robei_model_project" type="folder">
+  <hdmi_timing_gen.model name="hdmi_timing_gen.model" parent="model" type="model" />
+  <hdmi_tmds_encoder.model name="hdmi_tmds_encoder.model" parent="model" type="model" />
+  <hdmi_serializer.model name="hdmi_serializer.model" parent="model" type="model" />
+  <hdmi_pixel_shader.model name="hdmi_pixel_shader.model" parent="model" type="model" />
+  <hdmi_top.model name="hdmi_top.model" parent="model" type="model" />
+  <clk_wiz_0.model name="clk_wiz_0.model" parent="model" type="model" />
+  <hdmi_const.model name="hdmi_const.model" parent="model" type="model" />
+  <hdmi_rgb_splitter.model name="hdmi_rgb_splitter.model" parent="model" type="model" />
+  <gui_route_renderer.model name="gui_route_renderer.model" parent="model" type="model" />
+  <gui_route_test_top.model name="gui_route_test_top.model" parent="model" type="model" />
+  <gui_route_demo_info_source.model name="gui_route_demo_info_source.model" parent="model" type="model" />
+  <key_pulse_filter.model name="key_pulse_filter.model" parent="model" type="model" />
+  <sys_route_control_fsm.model name="sys_route_control_fsm.model" parent="model" type="model" />
+  <sys_route_control_core.model name="sys_route_control_core.model" parent="model" type="model" />
+  <route_contol_core.model name="route_contol_core.model" parent="model" type="model" />
+  <sys_route_gui_fsm_top.model name="sys_route_gui_fsm_top.model" parent="model" type="model" />
+  <gui_menu_to_state_info.model name="gui_menu_to_state_info.model" parent="model" type="model" />
+  <temp_gui_status_source.model name="temp_gui_status_source.model" parent="model" type="model" />
+  <ultrasonic_obstacle_guard.model name="ultrasonic_obstacle_guard.model" parent="model" type="model" />
+  <temp_ultrasonic_enable_source.model name="temp_ultrasonic_enable_source.model" parent="model" type="model" />
+  <motor_encoder_interface.model name="motor_encoder_interface.model" parent="model" type="model" />
+  <motor_route_controller.model name="motor_route_controller.model" parent="model" type="model" />
+  <motor_tb6612_driver.model name="motor_tb6612_driver.model" parent="model" type="model" />
+  <temp_motor_config_source.model name="temp_motor_config_source.model" parent="model" type="model" />
+  <gpio_key_adapter.model name="gpio_key_adapter.model" parent="model" type="model" />
+  <key_low_merge.model name="key_low_merge.model" parent="model" type="model" />
+  <temp_key_gpio_config_source.model name="temp_key_gpio_config_source.model" parent="model" type="model" />
+  <buzzer_ctrl.model name="buzzer_ctrl.model" parent="model" type="model" />
+  <buzzer_event_gen.model name="buzzer_event_gen.model" parent="model" type="model" />
+  <bt_route_uart.model name="bt_route_uart.model" parent="model" type="model" />
+  <uart_tx_8n1.model name="uart_tx_8n1.model" parent="model" type="model" />
+  <c5_motor_frame_driver.model name="c5_motor_frame_driver.model" parent="model" type="model" />
+  <c5_route_controller.model name="c5_route_controller.model" parent="model" type="model" />
+  <temp_c5_motor_config_source.model name="temp_c5_motor_config_source.model" parent="model" type="model" />
+  <car_param_controller.model name="car_param_controller.model" parent="model" type="model" />
+  <route_key_lock_gate.model name="route_key_lock_gate.model" parent="model" type="model" />
+  <rplidar_c1_uart.model name="rplidar_c1_uart.model" parent="model" type="model" />
+  <obstacle_stop_merge.model name="obstacle_stop_merge.model" parent="model" type="model" />
+  <power_on_reset.model name="power_on_reset.model" parent="model" type="model" />
+  <motion_sensor_subsystem.model name="motion_sensor_subsystem.model" parent="model" type="model" />
+  <dual_imu_static_calibrator.model name="dual_imu_static_calibrator.model" parent="model" type="model" />
+  <motion_sensor_bringup_top.model name="motion_sensor_bringup_top.model" parent="model" type="model" />
+  <lidar_map_sampler.model name="lidar_map_sampler.model" parent="model" type="model" />
+  <vl53l1x_array5.model name="vl53l1x_array5.model" parent="model" type="model" />
+  <c5_motion_stabilizer.model name="c5_motion_stabilizer.model" parent="model" type="model" />
+  <onboard_occupancy_map.model name="onboard_occupancy_map.model" parent="model" type="model" />
+  <map_flash_store.model name="map_flash_store.model" parent="model" type="model" />
+  <sd_card_detect_adapter.model name="sd_card_detect_adapter.model" parent="model" type="model" />
+  <sd_spi_block_device.model name="sd_spi_block_device.model" parent="model" type="model" />
+  <map_sd_store_controller.model name="map_sd_store_controller.model" parent="model" type="model" />
+  <map_sd_store.model name="map_sd_store.model" parent="model" type="model" />
+  <sd_spi_readonly.model name="sd_spi_readonly.model" parent="model" type="model" />
+  <sd_readonly_probe_top_impl.model name="sd_readonly_probe_top_impl.model" parent="model" type="model" />
+  <sd_readonly_probe_top.model name="sd_readonly_probe_top.model" parent="model" type="model" />
+  <linkpg_tag_position_uart.model name="linkpg_tag_position_uart.model" parent="model" type="model" />
+  <vehicle_debug_uart.model name="vehicle_debug_uart.model" parent="model" type="model" />
+  <onboard_exploration_controller.model name="onboard_exploration_controller.model" parent="model" type="model" />
+  <field_map_config_uart.model name="field_map_config_uart.model" parent="model" type="model" />
+ </model>
+ <test name="test" parent="robei_model_project" type="folder">
+  <power_on_reset_parameter.test name="power_on_reset_parameter.test" parent="test" type="test" />
+  <hdmi_timing_parameter.test name="hdmi_timing_parameter.test" parent="test" type="test" />
+  <ultrasonic_parameter.test name="ultrasonic_parameter.test" parent="test" type="test" />
+  <c5_motion_stabilizer_parameter.test name="c5_motion_stabilizer_parameter.test" parent="test" type="test" />
+  <dual_imu_calibration_parameter.test name="dual_imu_calibration_parameter.test" parent="test" type="test" />
+  <rplidar_protocol_parameter.test name="rplidar_protocol_parameter.test" parent="test" type="test" />
+  <lidar_map_sampler_parameter.test name="lidar_map_sampler_parameter.test" parent="test" type="test" />
+  <onboard_exploration_parameter.test name="onboard_exploration_parameter.test" parent="test" type="test" />
+  <linkpg_uart_parameter.test name="linkpg_uart_parameter.test" parent="test" type="test" />
+ </test>
+ <const name="const" parent="robei_model_project" type="folder">
+  <top.const name="top.const" parent="const" type="const" />
+  <sd_readonly_probe.const name="sd_readonly_probe.const" parent="const" type="const" />
+ </const>
+ <verilog name="verilog" parent="robei_model_project" type="folder">
+ </verilog>
+</robei_model_project>

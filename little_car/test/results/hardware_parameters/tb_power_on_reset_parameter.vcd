@@ -1,0 +1,60 @@
+$date
+	Wed Oct 14 10:31:08 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module power_on_reset_parameter $end
+$var reg 1 ! ext_rst_n $end
+$upscope $end
+$scope module power_on_reset_parameter $end
+$var wire 1 " system_rst_n $end
+$upscope $end
+$scope module power_on_reset_parameter $end
+$scope module power_on_reset0 $end
+$var reg 20 # por_count [19:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 #
+0"
+0!
+$end
+#50000
+b1 #
+1!
+#60000
+b11110100001000110110 #
+#70000
+b11110100001000110111 #
+#90000
+b11110100001000111000 #
+#110000
+b11110100001000111001 #
+#130000
+b11110100001000111010 #
+#150000
+b11110100001000111011 #
+#170000
+b11110100001000111100 #
+#190000
+b11110100001000111101 #
+#210000
+b11110100001000111110 #
+#230000
+b11110100001000111111 #
+#250000
+1"
+#260000
+0"
+b0 #
+0!
+#261000

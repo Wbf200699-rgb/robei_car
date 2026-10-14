@@ -1,0 +1,112 @@
+$date
+	Wed Oct 14 10:31:08 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ultrasonic_parameter $end
+$var reg 1 ! rst_n $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$var reg 1 " echo $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$var wire 1 # trig $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$var wire 16 $ distance_cm [15:0] $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$var wire 1 % distance_valid $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$var wire 1 & obstacle_stop $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$var wire 1 ' echo_timeout $end
+$upscope $end
+$scope module ultrasonic_parameter $end
+$scope module ultrasonic_obstacle_guard0 $end
+$var reg 3 ( state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 (
+0'
+0&
+0%
+b0 $
+0#
+0"
+0!
+$end
+#50000
+1#
+1!
+#10030000
+b1 (
+0#
+#10040000
+1"
+b10 (
+#300040000
+0"
+#300090000
+b11 (
+1&
+1%
+b101 $
+#300110000
+0&
+0%
+#300120000
+1"
+b10 (
+#1402120000
+0"
+#1402170000
+b11 (
+1&
+1%
+b10011 $
+#1402190000
+0&
+0%
+#1402200000
+1"
+b10 (
+#2562200000
+0"
+#2562250000
+b11 (
+1%
+b10100 $
+#2562270000
+0%
+#2562280000
+1"
+b10 (
+#4592280000
+0"
+#4592330000
+b11 (
+1%
+b100011 $
+#4592350000
+0%
+#4592360000
+b1 (
+#4592370000
+b11 (
+1%
+b1111111111111111 $
+1'
+#4592371000
