@@ -74,6 +74,22 @@ Copy-Item server/.env.example server/.env
 
 局域网演示参考 [tools/uwb/README](../tools/uwb/README.md)。ESP32 配置模板为 `esp32/uwb_gateway/gateway_secrets.example.h`；复制到被忽略的 `gateway_secrets.h` 并填写 Wi-Fi、服务地址和 Token。固件构建、接线详见 [网关说明](../esp32/uwb_gateway/README.md)。
 
+Linux / 树莓派的服务器启动方式：
+
+```bash
+python3 -m venv server/.venv
+server/.venv/bin/python -m pip install -r server/requirements-dev.txt
+cp server/.env.example server/.env
+# 编辑 server/.env 后加载配置；仅使用自己信任的本地文件。
+cd server
+set -a
+. ./.env
+set +a
+.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 18765
+```
+
+也可使用 `server/compose.yaml` 在配置好的 Docker 环境中部署。网络访问与密钥使用自己的配置；服务器运行在 Linux 用户态，不代表实现了 Linux 内核驱动。
+
 ## 6. 修改几何后
 
 ```powershell
